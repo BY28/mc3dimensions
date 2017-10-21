@@ -17,11 +17,15 @@
 		</header>
 
 		<main>
-			<header>
-				
-				@yield('header')
-			
-			</header>
+
+			<section class="section center" id="header">
+				<div class="container">	
+					<div id="banner-content">
+						<div id="header-particles"></div>
+							@yield('header')
+					</div>
+				</div>
+			</section>
 			
 			@yield('sidebar')
 			@yield('content')
@@ -58,8 +62,9 @@
 			}
 
 			updateColor();
-		
 		</script>
+		<script type="text/javascript" src="{{ URL::to('src/particles/js/particles.min.js') }}"></script>
+		<script type="text/javascript">particlesJS.load("header-particles", "{{ URL::to('src/particles/json/particles.json') }}", function(){});</script>
 		@yield('scripts')
 
 	</body>

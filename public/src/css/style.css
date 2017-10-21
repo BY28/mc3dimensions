@@ -2,8 +2,9 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  color: #34495e;
 }
-
+/*
 .btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
 	background-color: #e67e22;
 }
@@ -15,7 +16,7 @@ body {
 .btn:focus, .btn-large:focus, .btn-floating:focus, .btn-large:focus, .btn-flat:focus {
 	background-color: #d35400;
 }
-
+*/
 main {
   flex: 1 0 auto;
 }
@@ -36,12 +37,12 @@ nav{
 	position: absolute;z-index:999999999;
 } 
 
-#index-banner{
+#header{
     background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");
     background-size: contain;
 }
-
-#index-particles{
+/*
+#header-particles{
 	position: absolute;
     width: 100%;
     height: 100%;
@@ -50,6 +51,16 @@ nav{
     background-color: #2c3e50;
     z-index: -1;
   }
+*/
+#header-particles {
+  background-color: #2c3e50;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1; 
+}
 
 #banner-content{
 	margin-top: 8%;
@@ -113,11 +124,11 @@ nav{
 }
 
 /* vente */
-.icon-mono.vente {
+.icon-mono.boutique {
   background-position: -192px 0;
 }
 
-.icon-mono.vente:hover {
+.icon-mono.boutique:hover {
     background-color: #ecf0f1;
   background-position: -192px -96px;
 }
@@ -132,7 +143,55 @@ nav{
   background-position: -288px -96px;
 }
 
+#partners{
+	background-color: #ecf0f1;
+}
 
+#partners img{
+	width: 80%;
+}
+
+#industries{
+	background-color: #ffffff;
+}
+
+#industries-content .industry-item{
+	margin-top: 4%;
+}
+
+#industries-content a{
+	color: #34495e;
+}
+
+#industries-content .industry-item img{
+	-webkit-transition:all 0.5s ease;
+      -moz-transition:all 0.5s ease;
+       -ms-transition:all 0.5s ease;
+        -o-transition:all 0.5s ease;
+           transition:all 0.5s ease;
+}
+
+#industries-content .industry-item img:hover{
+    -webkit-transform: translate(0,-15px);
+    transform: translate(0,-15px);
+}
+
+#index-impression{
+	background-color: #ffffff;
+}
+
+#index-formations{
+	background-color: #34495e;
+	color: #ecf0f1;
+}
+
+#index-formations .card{
+	color: #34495e;
+}
+
+#index-impression .btn{
+	margin-top: 2%;
+}
 
 .promo i {
     margin: 40px 0;
@@ -147,22 +206,10 @@ nav{
     margin-bottom: 0;
 }
 
-#services{
-	background-color: #bdc3c7;
-}
-
-#index-formations{
-	background-color: #ffffff;
-}
-
-#partners{
+#index-boutique{
 	background-color: #ecf0f1;
 }
 
-#partners img{
-	width: 50%;
-}
-
-#index-impression{
-	background-color: #ffffff;
+#formations{
+	background-color: #fff;
 }
