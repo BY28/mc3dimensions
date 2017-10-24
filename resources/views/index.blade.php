@@ -9,63 +9,51 @@
 					<h4>Formation 3D professionnelle</h4>
 					<div class="row banner-text">
 						<div class="col s6 offset-s3">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>	
+							<p>Avec nos formations vous aurez une maitrise parfaite des logiciels 3D concernés. Notre expérience et savoir faire dans le domaine vous sera transmis par nos ingénieurs qualifiés dans le domaine</p>	
 						</div>
 					</div>
 					
-					<a href="#" class="waves-effect waves-light btn orange">Nos formations</a>
+					<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
 				</div>
 				<div data-hash="impression">
 					<h1>Impression 3D</h1>
 					<h4>Service d'impression à la demande</h4>
 					<div class="row banner-text">
 						<div class="col s6 offset-s3">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>	
+							<p>MC3 fait vivre vos idées et accélère votre production! Notre équipe s'occupera de l'impression de vos différents objets avec une précision hors du commun. Tout ce que vous avez à faire est de nous envoyer vos fichiers</p>	
 						</div>
 					</div>
 					
-					<a href="#" class="waves-effect waves-light btn orange">Envoyez vos fichiers</a>
+					<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Envoyez vos fichiers</a>
 				</div>
 				<div data-hash="boutique">
 					<h1>Qualité de service inégalabe</h1>
 					<h4>Logiciel et matériel à la pointe de la technologie</h4>
 					<div class="row banner-text">
 						<div class="col s6 offset-s3">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>	
+							<p>Nos produits englobent toute la chaine de production, des logiciels de conception 3D aux imprimantes. Vous pouvez vous en procurer dès maintentant!</p>	
 						</div>
 					</div>
 					
-					<a href="#" class="waves-effect waves-light btn orange">Boutique</a>
+					<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Nos produits</a>
 				</div>
-				<div data-hash="services">
+				<div data-hash="domaines">
 					<h1>Applications infinies</h1>
 					<h4>Des services sur mesure pour votre secteur d'activité</h4>
 					<div class="row banner-text">
 						<div class="col s6 offset-s3">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>	
+							<p>Nous vous proposons des services sur mesure selon votre secteur d'activité, vous bénéficierez d'un suivi irreprochable et de différents conseils pour vous aider à améliorer et accélérer votre industrie</p>	
 						</div>
 					</div>
 					
-					<a href="#" class="waves-effect waves-light btn orange">Découvrir</a>
+					<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Découvrir</a>
 				</div>
 			</div>
 			<div id="banner-nav">
 				<a href="#formation" class="icon icon-mono formation">formation</a>
 				<a href="#impression" class="icon icon-mono impression">impression</a>
 				<a href="#boutique" class="icon icon-mono boutique">boutique+</a>
-				<a href="#services" class="icon icon-mono services">services</a>
+				<a href="#domaines" class="icon icon-mono domaines">domaines</a>
 			</div>
 @endsection
 
@@ -104,40 +92,40 @@
 		<div id="industries-content">
 			<div class="container">	
 				<h2>Boostez votre activité</h2>
-				<h4>La 3D dans tous les secteurs</h4>
+				<h4>La 3D dans tous les domaines</h4>
 					  <div class="row">
 					    <div class="col s2  industry-item">
-					    	<a href="#">
+					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						      	<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370942405559713792/exagon_ai.png">
 						      	<h5>Dentaire</h5>
 					    	</a>
 					    </div>
 					     <div class="col s2 industry-item">
-					     	<a href="#">
+					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 						    <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370947412073644032/ring.png">
 						      	<h5>Bijouterie</h5>
 							</a>
 					    </div>
 					     <div class="col s2  industry-item">
-					     	<a href="#">
+					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 					      <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370949699890577408/healthcare.png">
 						      	<h5>Santé</h5>
 						    </a>
 					    </div>
 					    <div class="col s2  industry-item">
-					    	<a href="#">
+					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370954231781523456/mecaNIK.png">
 						      	<h5>Mécanique</h5>
 						    </a>
 					    </div>
 					    <div class="col s2  industry-item">
-					    	<a href="#">
+					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370956082643992576/home.png">
 						      	<h5>Architecture</h5>
 						    </a>
 					    </div>
 					     <div class="col s2  industry-item">
-					     	<a href="#">
+					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
 						      	<h5>Prototypage</h5>
 						    </a>
@@ -152,12 +140,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s4">
-				<h2>Formations</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<a href="#" class="waves-effect waves-light btn orange">Read more</a>
+				<h2>Formez-vous !</h2>
+				<p>Choisissez parmis l'une de nos différentes formations que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
+				<a href="#" class="waves-effect waves-light btn orange">Nos formations</a>
 			</div>
 			<div class="col s8">
 				  <div class="row">
@@ -165,7 +150,7 @@
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="https://cdn.discordapp.com/attachments/194092101300912129/370989342358896641/ss.png">
-				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+				          <a href="{{ URL::to('formations/3design') }}" class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
 				        </div>
 				        <div class="card-content">
 				          <p>Formation 3D sur le logiciel de conception de bijoux le plus performant du marché</p>
@@ -176,7 +161,7 @@
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="http://www.techno-midiazot.re/wp-content/uploads/2017/07/solidworks-3d-cad-web-image.png">
-				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+				          <a href="{{ URL::to('formations/3design') }}" class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
 				        </div>
 				        <div class="card-content">
 				          <p>Formations solidworks adapté à votre niveau, choisissez entre basique et avancée</p>
@@ -192,31 +177,13 @@
 <section class="section center" id="index-impression">
 	
 	<div class="container">	
-		<h2>Impression 3D</h2>
-		<a href="#" class="waves-effect waves-light btn orange">PASSER UNE COMMANDE</a>
+		<h2>Donnez vie à vos idées</h2>
 		<div class="row">
-			<div class="col s4">
-				<div class="center promo">
-	                <i class="material-icons">lightbulb_outline</i>
-	                <p class="promo-caption">CREATION</p>
-	                <p class="light center">Créez et modélisez votre objet 3D sur le logiciel 3d de votre choix</p>
-              	</div>
-			</div>
-			<div class="col s4">
-				<div class="center promo">
-	                <i class="material-icons">file_upload</i>
-	                <p class="promo-caption">UPLOAD</p>
-	                <p class="light center">Envoyez les fichiers .STL sur le site, choisissez l'un de nos différents matériaux et lancez votre commande</p>
-              	</div>
-			</div>
-			<div class="col s4">
-				<div class="center promo">
-	                <i class="material-icons">timer</i>
-	                <p class="promo-caption">RECEPTION</p>
-	                <p class="light center">Recevez votre objet 3D en un temps reccord et avec un haut niveau de précision</p>
-              	</div>
+			<div class="col s12">
+				<img src="{{ URL::to('src/img/backgrounds/print-steps.png') }}" class="responsive-img">
 			</div>
 		</div>
+		<a href="#" class="waves-effect waves-light btn orange">PASSER UNE COMMANDE</a>
 	</div>
 </section>
 
@@ -262,18 +229,14 @@
 			</div>
 
 			<div class="col s4">
-				<h2>Boutique</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<a href="#" class="waves-effect waves-light btn orange">Read more</a>
+				<h2>Equipez-vous !</h2>
+				<p>Notre équipe vous conseillera pour vous doter de l'un de nos produits. Un investissement plus que nécessaire pour votre développement qui vous offrira un gain de temps considérable.</p>
+				<a href="#" class="waves-effect waves-light btn orange">Liste des produits</a>
 			</div>
 			
 		</div>
 	</div>
 </section>
-
 
 @endsection
 

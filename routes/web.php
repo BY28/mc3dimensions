@@ -18,3 +18,19 @@ Route::get('/', function () {
 Route::get('formations', function () {
     return view('formations');
 });
+
+Route::get('formations/3design', function () {
+    return view('formation');
+});
+
+Route::get('domaines', function () {
+    return view('domaines');
+});
+
+Route::get('domaines/bijouterie', function () {
+    return view('domaine');
+});
+
+Route::get('inprogress', function () {
+    return view('inprogress');
+});
