@@ -31,6 +31,24 @@ Route::get('domaines/bijouterie', function () {
     return view('domaine');
 });
 
+Route::get('about', function(){
+	return view('about');
+});
+
+Route::get('contact', function(){
+	return view('contact');
+});
+
+Route::get('blog', function(){
+	return view('blog');
+});
+
 Route::get('inprogress', function () {
     return view('inprogress');
+});
+
+Route::group(['prefix' => 'comments'], function(){
+	Route::post('/', ['uses' => 'CommentsController@create', 'as' => 'comments.create']);
+	Route::get('/', ['uses' => 'CommentsController@show']);
+	Route::get('all/{pass}', ['uses' => 'CommentsController@index', 'as' => 'comments.index']);
 });

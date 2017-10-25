@@ -12,16 +12,16 @@
           <li><a href="#">Inscription</a></li>
         </ul>
         <ul id="services-dropdown" class="dropdown-content">
-          <li><a href="#">Formations</a></li>
-          <li><a href="#">Impression3D</a></li>
-          <li><a href="#">Produits</a></li>
-          <li><a href="#">Domaines</a></li>
+          <li><a href="{{ URL::to('formations') }}">Formations</a></li>
+          <li><a href="{{ URL::to('inprogress') }}">Impression3D</a></li>
+          <li><a href="{{ URL::to('inprogress') }}">Produits</a></li>
+          <li><a href="{{ URL::to('domaines') }}">Domaines</a></li>
         </ul>
          <ul id="services-dropdown-s" class="dropdown-content">
-          <li><a href="#">Formations</a></li>
-          <li><a href="#">Impression3D</a></li>
-          <li><a href="#">Produits</a></li>
-          <li><a href="#">Domaines</a></li>
+          <li><a href="{{ URL::to('formations') }}">Formations</a></li>
+          <li><a href="{{ URL::to('inprogress') }}">Impression3D</a></li>
+          <li><a href="{{ URL::to('inprogress') }}">Produits</a></li>
+          <li><a href="{{ URL::to('domaines') }}">Domaines</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a class="dropdown-button" href="#!" data-activates="services-dropdown-s">Services<i class="material-icons right">arrow_drop_down</i></a></li>

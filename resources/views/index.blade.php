@@ -9,7 +9,7 @@
 					<h4>Formation 3D professionnelle</h4>
 					<div class="row banner-text">
 						<div class="col s6 offset-s3">
-							<p>Avec nos formations vous aurez une maitrise parfaite des logiciels 3D concernés. Notre expérience et savoir faire dans le domaine vous sera transmis par nos ingénieurs qualifiés dans le domaine</p>	
+							<p>Avec nos formations vous aurez une maitrise parfaite des logiciels 3D concernés. Notre expérience et savoir faire dans le domaine vous sera transmis par nos ingénieurs qualifiés</p>	
 						</div>
 					</div>
 					
@@ -92,7 +92,8 @@
 		<div id="industries-content">
 			<div class="container">	
 				<h2>Boostez votre activité</h2>
-				<h4>La 3D dans tous les domaines</h4>
+				<!-- <h4>La 3D dans tous les domaines</h4> -->
+				<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Tous les secteurs</a>
 					  <div class="row">
 					    <div class="col s2  industry-item">
 					    	<a href="{{ URL::to('domaines/bijouterie') }}">
@@ -142,7 +143,7 @@
 			<div class="col s4">
 				<h2>Formez-vous !</h2>
 				<p>Choisissez parmis l'une de nos différentes formations que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
-				<a href="#" class="waves-effect waves-light btn orange">Nos formations</a>
+				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
 			</div>
 			<div class="col s8">
 				  <div class="row">
@@ -183,7 +184,7 @@
 				<img src="{{ URL::to('src/img/backgrounds/print-steps.png') }}" class="responsive-img">
 			</div>
 		</div>
-		<a href="#" class="waves-effect waves-light btn orange">PASSER UNE COMMANDE</a>
+		<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">PASSER UNE COMMANDE</a>
 	</div>
 </section>
 
@@ -231,7 +232,7 @@
 			<div class="col s4">
 				<h2>Equipez-vous !</h2>
 				<p>Notre équipe vous conseillera pour vous doter de l'un de nos produits. Un investissement plus que nécessaire pour votre développement qui vous offrira un gain de temps considérable.</p>
-				<a href="#" class="waves-effect waves-light btn orange">Liste des produits</a>
+				<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Liste des produits</a>
 			</div>
 			
 		</div>

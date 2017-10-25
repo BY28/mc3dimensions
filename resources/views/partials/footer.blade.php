@@ -9,10 +9,10 @@
           <div class="col s3 right">
             <h5 class="white-text">Services</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Formations</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Impression3D</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Boutique</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Domaines</a></li>
+              <li><a class="grey-text text-lighten-3" href="{{ URL::to('formations') }}">Formations</a></li>
+              <li><a class="grey-text text-lighten-3" href="{{ URL::to('inprogress') }}">Impression3D</a></li>
+              <li><a class="grey-text text-lighten-3" href="{{ URL::to('inprogress') }}">Boutique</a></li>
+              <li><a class="grey-text text-lighten-3" href="{{ URL::to('domaines') }}">Domaines</a></li>
             </ul>
           </div>
           <div class="col s3 right">

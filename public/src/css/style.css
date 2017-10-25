@@ -98,6 +98,11 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	color: #34495e;
 }
 
+.tap-target{
+	background-color: orange;
+	color: white;
+}
+
 /*  */
 
 main {
@@ -423,7 +428,22 @@ nav{
 
 #section-domaines{
 	background-color: #ffffff;
+	color: #ffffff;
 }
+
+
+#section-domaines img{
+	width: 50%;
+}
+
+#section-domaines .row{
+	margin-bottom: 0px;
+}
+
+#section-domaines .row h4{
+	color: #34495e;
+}
+
 
 #section-domaine{
 	background-color: #ffffff;
@@ -431,4 +451,16 @@ nav{
 
 #domaine-images{
 	background-color: #ecf0f1;
+}
+
+/* ABOUT */
+
+#section-about{
+	background: #ffffff;
+}
+
+/* CONTACT */
+
+#section-contact{
+	background: #ffffff;
 }
