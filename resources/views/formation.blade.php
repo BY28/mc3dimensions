@@ -1,5 +1,9 @@
 @extends('layouts.pages')
 
+@section('title')
+Formation 3Design | MC3
+@endsection
+
 @section('header')
 
 	<h1>3DESIGN</h1>
@@ -76,9 +80,10 @@
 <section class="section" id="formation-inscription">
 		
 		<div class="container">
-			<h1>Inscrivez-vous</h1>
 			<div class="row">		
-				<div class="col s12">
+				<div class="col m8 offset-m2 s12 z-depth-1 hoverable" id="formation-form">
+					<h1>Inscrivez-vous</h1>
+					<div class="divider"></div>
 					<form>
 					      <div class="row">
 					        <div class="input-field col s6">
@@ -102,6 +107,10 @@
 					          <label for="phone">Phone</label>
 					        </div>
 					      </div>
+					      <div class="input-field">	
+					        <textarea name="comment" id="comment" class="materialize-textarea" style="height: 12rem" data-length="1024"></textarea>
+					        <label for="comment" class="">Commentaire</label>
+						</div>
 					      <button class="waves-effect waves-light btn orange">ENVOYER</button>
 				    </form>
 				</div>

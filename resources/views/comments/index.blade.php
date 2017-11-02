@@ -9,16 +9,18 @@
 	
 	<section class="section" id="comments-form" style="background-color: #fff">
 		<div class="container">
-			<div class="row">
-				<div class="col s12">
+			
 				@foreach($comments as $comment)
-	
-					<p>{{ $comment->content }}</p>
-					<div class="divider"></div>
-					
+					<div class="row">
+						<div class="col m8 offset-m2 s12 z-depth-2" style="padding: 1%">
+
+							<p>{{ $comment->content }}</p>
+							<div class="divider"></div>
+							<p class="right">{{ $comment->created_at }}</p>
+							
+						</div>
+					</div>
 				@endforeach
-				</div>
-			</div>
 		</div>
 	</section>
 

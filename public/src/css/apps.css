@@ -1,0 +1,223 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #34495e;
+}
+
+/* MATERIALIZE */
+
+/*
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
+	background-color: #e67e22;
+}
+
+.btn:hover, .btn-large:hover, .btn-floating:hover, .btn-large:hover, .btn-flat:hover {
+	background-color: #f39c12;
+}
+
+.btn:focus, .btn-large:focus, .btn-floating:focus, .btn-large:focus, .btn-flat:focus {
+	background-color: #d35400;
+}
+*/
+
+/* label color */
+.input-field label {
+  color: #34495e;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #f39c12;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #f39c12;
+  box-shadow: 0 1px 0 0 #f39c12;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #f39c12;
+  box-shadow: 0 1px 0 0 #f39c12;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #f39c12;
+  box-shadow: 0 1px 0 0 #f39c12;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #f39c12;
+}
+
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before,
+input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
+  background-color: #f39c12;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f39c12;
+  -webkit-box-shadow: 0 1px 0 0 #f39c12;
+          box-shadow: 0 1px 0 0 #f39c12;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #f39c12;
+}
+
+.dropdown-content li > a{
+	color: #34495e;
+}
+
+.dropdown-content li > a, .dropdown-content li > span{
+  color: #34495e;
+}
+
+.pagination li.active {
+    background-color: orange;
+}
+
+#sidenav-overlay{
+  z-index: 996;
+}
+
+.tap-target{
+	background-color: orange;
+	color: white;
+}
+
+/*  */
+
+main {
+  flex: 1 0 auto;
+  background: #ecf0f1;
+}
+ 
+.navbar-fixed nav{
+	background: #ffffff;
+  position: static;
+}
+
+nav ul a{
+  color: #34495e;
+}
+
+nav a{
+  color: #34495e;
+}
+
+.page-footer{
+	background: #ffffff;
+  color: #34495e;
+}
+
+.page-footer a{
+  text-decoration: none;
+  color: #34495e;
+}
+
+.page-footer .footer-copyright{
+	background: #ffffff;
+  color: #34495e;
+}
+
+.footer-copyright a{
+	margin-left: 2%;
+  text-decoration: none;
+  color: #34495e;
+}
+
+/* PRODUCTS */
+
+#shop-search form{
+  background: #ffffff;
+}
+
+#section-products .card-title{
+  font-size: 1.2em;
+}
+
+#section-products .card p{
+  font-size: 0.9em;
+}
+
+#section-products .card img{
+  max-height: 275px;
+  min-height: 275px;
+}
+
+/* PRODUCT */
+
+#section-product #product{
+  background: #ffffff;
+  padding: 2%;
+}
+
+/* BLOG */
+
+#header{
+  background: #ffffff;
+  color: #34495e;
+}
+
+#section-blog .card .card-title{
+  font-size: 1.2em;
+}
+
+
+#section-blog .card .card-date{
+  font-size: 0.8em;
+}
+
+#section-blog .card .card-text{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+#section-blog .card img{
+  max-height: 275px;
+  min-height: 275px;
+}
+
+/* PRINT */
+
+
+
+#print-object{
+  background: #ffffff;
+  padding: 0%;
+  margin:0%;
+  overflow: hidden;
+  height: 500px;
+}
+
+#object-options{
+  /*background: #ffffff;*/
+}
+
+#parameters-form{
+  background: #ffffff;
+}

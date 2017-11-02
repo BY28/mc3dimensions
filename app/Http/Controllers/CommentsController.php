@@ -36,7 +36,7 @@ class CommentsController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, [
-            'message' => 'required|alpha_num|min:4|max:1024',
+            'message' => 'required|min:4|max:1024',
         ]);
         
         $inputs['content'] = $request->input('message');

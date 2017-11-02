@@ -1,5 +1,9 @@
 @extends('layouts.pages')
 
+@section('title')
+Développement... | MC3
+@endsection
+
 @section('header')
 
 	<h1>Site en construction</h1>

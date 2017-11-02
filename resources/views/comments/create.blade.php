@@ -11,7 +11,7 @@
 	<section class="section" id="comments-form" style="background-color: #fff">
 		<div class="container">
 			<div class="row">
-				<div class="col s6">
+				<div class="col s6 z-depth-1 hoverable" style="padding: 2%">
 					<h5>Entrez votre message</h5>
 					{!! $errors->first('message', ' <div class="card-panel orange lighten-1"><span class="white-text">:message</span></div>') !!}
 					<form action="{{ route('comments.create') }}" method="post">
@@ -21,7 +21,7 @@
 					        <label for="textarea" class="">Message</label>
 						</div>
 						<div class="input-field">	
-							<button class="waves-effect waves-light btn orange right" type="submit">Envoyer</button>
+							<button class="waves-effect waves-light btn orange right" type="submit" style="margin-top: 5%">Envoyer</button>
 						</div>
 						{{csrf_field()}}
 					</form>

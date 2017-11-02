@@ -1,5 +1,9 @@
 @extends('layouts.pages')
 
+@section('title')
+Bijouterie | MC3
+@endsection
+
 @section('header')
 	<h1>Bijouterie</h1>
 	<h4>Accélérez vos processus de production</h4>
@@ -10,21 +14,19 @@
 	<section class="section" id="section-domaine">
 		
 		<div class="container">
-
+			<div class="row">
+				<div class="col m4 offset-m2 hide-on-small-only">
+					<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372818495144198155/bijouterie.png" width="50%">
+				</div>
+				<div class="col m6">
+					<h3>Bijouterie, joaillerie et horlogerie</h3>
+					<p>Dans ce domaine, l'imprimante 3D vous permet de fabriquer à l’unité ou en série vos créations de bagues, colliers, bracelets, montres… avec une grande précision et en un temps record.</p>
+				</div>
+			</div>
 		<div class="row">
 			<div class="col s6">
-				<div class="row">
-					<div class="col s12">
-						<h3>Bijouterie, joaillerie et horlogerie</h3>
-						<p>Dans ce domaine, l'imprimante 3D vous permet de fabriquer à l’unité ou en série vos créations de bagues, colliers, bracelets, montres… avec une grande précision et en un temps record.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s12">
-						<h3>Pourquoi imprimer en 3D ?</h3>
-						<p>L'impression 3D vous permet non seulement de gagner du temps mais aussi d'avoir un résultat final fiable et de haute précision. Ce qui laisse libre cours à votre imagination permettant ainsi de faire différents modèles personnalisés</p>
-					</div>
-				</div>
+				<h3>Pourquoi imprimer en 3D ?</h3>
+				<p>L'impression 3D vous permet non seulement de gagner du temps mais aussi d'avoir un résultat final fiable et de haute précision. Ce qui laisse libre cours à votre imagination permettant ainsi de faire différents modèles personnalisés</p>
 			</div>
 			<div class="col s6 center">
 				<div class="owl-carousel" id="domaine-carousel">

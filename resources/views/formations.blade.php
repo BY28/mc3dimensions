@@ -1,5 +1,9 @@
 @extends('layouts.pages')
 
+@section('title')
+Formations | MC3
+@endsection
+
 @section('header')
 	<h1>Choisissez votre formation</h1>
 	<h4>Formation 3D professionnelle</h4>

@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>@yield('title')</title>
+		<link rel="icon" href="http://www.mc3antilles.com/images/mc3_logo/55x55.png"" />
 		<link rel="stylesheet" href="{{ URL::to('src/materialize/css/materialize.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/materialize/css/materialicons.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/css/style.css') }}">
@@ -34,19 +35,19 @@
 			
 				<div class="container">
 					<div class="row center">		
-						<div class="col s3">
+						<div class="col m3 s6">
 							<a href="{{ URL::to('formations') }}" class="icon icon-mono formation">formation</a>
 							<h5>Formations</h5>
 						</div>	
-						<div class="col s3">
-							<a href="{{ URL::to('inprogress') }}" class="icon icon-mono impression">impression</a>
+						<div class="col m3 s6">
+							<a href="{{ URL::to('print') }}" class="icon icon-mono impression">impression</a>
 							<h5>Impression3D</h5>
 						</div>	
-						<div class="col s3">
-							<a href="{{ URL::to('inprogress') }}" class="icon icon-mono boutique">boutique+</a>
+						<div class="col m3 s6">
+							<a href="{{ URL::to('products') }}" class="icon icon-mono boutique">boutique+</a>
 							<h5>Produits</h5>
 						</div>	
-						<div class="col s3">
+						<div class="col m3 s6">
 							<a href="{{ URL::to('domaines') }}" class="icon icon-mono domaines">domaines</a>
 							<h5>Domaines</h5>
 						</div>
@@ -83,7 +84,7 @@
 				</div>
 			</section>
 
-		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		<div class="fixed-action-btn" id="commentsContainer" style="bottom: 45px; right: 24px;">
           <a href="{{ URL::to('comments') }}" class="btn-floating btn-large waves-effect waves-light pulse orange" onclick="$('.tap-target').tapTarget('open')" id="comments"><i class="material-icons">question_answer</i></a>
 		</div>
 		<div class="tap-target" data-activates="comments">
@@ -121,6 +122,17 @@
 
 			$(document).ready(function(){
 		      	$('.tap-target').tapTarget('open');
+		      	setTimeout(
+			    function() {
+			      $('.tap-target').tapTarget('close');
+			  }, 3000);
+
+		      	$('#commentsContainer').hover(function() {
+		      		$('.tap-target').tapTarget('open');
+				});
+		      	$('.tap-target').mouseleave(function() {
+		      		$('.tap-target').tapTarget('close');
+				});
 		    });
         
 			$(document).on('scroll', function (e) { updateColor(); });

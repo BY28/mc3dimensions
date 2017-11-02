@@ -1,39 +1,41 @@
- <footer class="page-footer">
+ <footer class="page-footer z-depth-1">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">MC3 Algérie</h5>
-        <p class="grey-text text-lighten-4">MC3 Algérie assure vos arrières, nous vous accompagnons tout au long des différents processus. Nous sommes à votre disposition.</p>
+        <h5 >MC3 Algérie</h5>
+        <p >MC3 Algérie assure vos arrières, nous vous accompagnons tout au long des différents processus. Nous sommes à votre disposition.</p>
       </div>
       <div class="col l6 s12">
-          <div class="col s3 right">
-            <h5 class="white-text">Services</h5>
+          <div class="col m3 s12 right">
+            <h5>Services</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="{{ URL::to('formations') }}">Formations</a></li>
-              <li><a class="grey-text text-lighten-3" href="{{ URL::to('inprogress') }}">Impression3D</a></li>
-              <li><a class="grey-text text-lighten-3" href="{{ URL::to('inprogress') }}">Boutique</a></li>
-              <li><a class="grey-text text-lighten-3" href="{{ URL::to('domaines') }}">Domaines</a></li>
+              <li><a  href="{{ URL::to('formations') }}">Formations</a></li>
+              <li><a  href="{{ URL::to('print') }}">Impression3D</a></li>
+              <li><a  href="{{ URL::to('products') }}">Boutique</a></li>
+              <li><a  href="{{ URL::to('domaines') }}">Domaines</a></li>
             </ul>
           </div>
-          <div class="col s3 right">
-            <h5 class="white-text">Entreprise</h5>
+          <div class="col m3 s12 right">
+            <h5 >Entreprise</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">A propos de nous</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+              <li><a  href="{{ URL::to('about') }}">A propos de nous</a></li>
+              <li><a  href="{{ URL::to('contact') }}">Contact</a></li>
+              <li><a  href="{{ URL::to('blog') }}">Blog</a></li>
             </ul>
           </div>
-          <div class="col s3 right">
-            <h5 class="white-text">Suivez-nous</h5>
+          <div class="col m3 s12 right">
+            <h5 >Suivez-nous</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Google</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+              <li><a  href="#">Facebook</a></li>
+              <li><a  href="#">Google</a></li>
+              <li><a  href="#">Twitter</a></li>
             </ul>
           </div>
         
       </div>
     </div>
   </div>
+  <div class="divider blue-grey darken-3"></div>
   <div class="footer-copyright">
     <div class="container">
     © 2018 Copyright MC3 Algérie

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+Formations, Impression 3D, Logiciels et matériels informatique | MC3
+@endsection
+
 @section('header')
 
 
@@ -24,7 +28,7 @@
 						</div>
 					</div>
 					
-					<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Envoyez vos fichiers</a>
+					<a href="{{ URL::to('print') }}" class="waves-effect waves-light btn orange">Envoyez vos fichiers</a>
 				</div>
 				<div data-hash="boutique">
 					<h1>Qualité de service inégalabe</h1>
@@ -35,7 +39,7 @@
 						</div>
 					</div>
 					
-					<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Nos produits</a>
+					<a href="{{ URL::to('products') }}" class="waves-effect waves-light btn orange">Nos produits</a>
 				</div>
 				<div data-hash="domaines">
 					<h1>Applications infinies</h1>
@@ -95,37 +99,37 @@
 				<!-- <h4>La 3D dans tous les domaines</h4> -->
 				<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Tous les secteurs</a>
 					  <div class="row">
-					    <div class="col s2  industry-item">
+					    <div class="col l2 m4 s6  industry-item">
 					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						      	<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370942405559713792/exagon_ai.png">
 						      	<h5>Dentaire</h5>
 					    	</a>
 					    </div>
-					     <div class="col s2 industry-item">
+					     <div class="col l2 m4 s6 industry-item">
 					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 						    <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370947412073644032/ring.png">
 						      	<h5>Bijouterie</h5>
 							</a>
 					    </div>
-					     <div class="col s2  industry-item">
+					     <div class="col l2 m4 s6  industry-item">
 					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 					      <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370949699890577408/healthcare.png">
 						      	<h5>Santé</h5>
 						    </a>
 					    </div>
-					    <div class="col s2  industry-item">
+					    <div class="col l2 m4 s6  industry-item">
 					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370954231781523456/mecaNIK.png">
 						      	<h5>Mécanique</h5>
 						    </a>
 					    </div>
-					    <div class="col s2  industry-item">
+					    <div class="col l2 m4 s6  industry-item">
 					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370956082643992576/home.png">
 						      	<h5>Architecture</h5>
 						    </a>
 					    </div>
-					     <div class="col s2  industry-item">
+					     <div class="col l2 m4 s6  industry-item">
 					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
 						      	<h5>Prototypage</h5>
@@ -140,14 +144,14 @@
 <section class="section" id="index-formations">
 	<div class="container">
 		<div class="row">
-			<div class="col s4">
+			<div class="col l4 m4 s12">
 				<h2>Formez-vous !</h2>
 				<p>Choisissez parmis l'une de nos différentes formations que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
 				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
 			</div>
-			<div class="col s8">
+			<div class="col l8 m8 s12">
 				  <div class="row">
-				    <div class="col s6">
+				    <div class="col m6 s12">
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="https://cdn.discordapp.com/attachments/194092101300912129/370989342358896641/ss.png">
@@ -158,7 +162,7 @@
 				        </div>
 				      </div>
 				    </div>
-				     <div class="col s6">
+				     <div class="col m6 s12">
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="http://www.techno-midiazot.re/wp-content/uploads/2017/07/solidworks-3d-cad-web-image.png">
@@ -191,35 +195,35 @@
 <section class="section" id="index-boutique">
 	<div class="container">
 		<div class="row">
-			<div class="col s8">
+			<div class="col l8 m8 s12">
 				  <div class="row">
-				    <div class="col s4">
+				    <div class="col l4 m6 s12">
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="https://cdn.discordapp.com/attachments/194092101300912129/371289625114705921/11.png">
-				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 				        </div>
 				        <div class="card-content">
 				          <p>Imprimantes 3D</p>
 				        </div>
 				      </div>
 				    </div>
-				     <div class="col s4">
+				     <div class="col l4 m6 s12">
 				      <div class="card">
 				        <div class="card-image">
 				          <img src="https://media.messe.ch/baselworld/OnlineCatalogue/images/bild/551x710/1014596.png">
-				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 				        </div>
 				        <div class="card-content">
 				          <p>Logiciels 3D</p>
 				        </div>
 				      </div>
 				    </div>
-				     <div class="col s4">
+				     <div class="col l4 m6 s12">
 				      <div class="card">
 				        <div class="card-image">
-				          <img src="https://cdn.discordapp.com/attachments/194092101300912129/371286968132173857/ds.png">
-				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+				          <img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c41.0.540.540/p180x540/20504881_1499920073400696_320361520414326784_n.jpg?oh=147ee5ae78f250937866e8f1b4a074cb&oe=5A7B6EE8&__gda__=1517717225_b8c1d536443bca3ab7fe8ef5fb59c6f6">
+				          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 				        </div>
 				        <div class="card-content">
 				          <p>Scanners 3D</p>
@@ -229,7 +233,7 @@
 				  </div>
 			</div>
 
-			<div class="col s4">
+			<div class="col l4 m4 s12">
 				<h2>Equipez-vous !</h2>
 				<p>Notre équipe vous conseillera pour vous doter de l'un de nos produits. Un investissement plus que nécessaire pour votre développement qui vous offrira un gain de temps considérable.</p>
 				<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Liste des produits</a>

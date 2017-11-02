@@ -43,8 +43,30 @@ Route::get('blog', function(){
 	return view('blog');
 });
 
+
+Route::get('products', function () {
+    return view('products');
+});
+
+Route::get('product', function () {
+    return view('product');
+});
+
+
+Route::get('print', function () {
+    return view('print');
+});
+
+Route::get('send', function () {
+    return view('send');
+});
+
 Route::get('inprogress', function () {
     return view('inprogress');
+});
+
+Route::get('app', function(){
+    return view('app');
 });
 
 Route::group(['prefix' => 'comments'], function(){

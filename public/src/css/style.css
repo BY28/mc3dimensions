@@ -98,6 +98,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	color: #34495e;
 }
 
+.dropdown-content li > a, .dropdown-content li > span{
+  color: #34495e;
+}
+
+.pagination li.active {
+    background-color: orange;
+}
+
+#sidenav-overlay{
+	z-index: 996;
+}
+
 .tap-target{
 	background-color: orange;
 	color: white;
@@ -128,6 +140,11 @@ nav{
 #header{
     background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");
     background-size: contain;
+}
+
+.page-footer a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer-copyright a{
@@ -210,6 +227,10 @@ nav{
   background-position: 0 -96px;
 }
 
+#formation-form{
+	padding: 2%;
+}
+
 /* impression */
 .icon-mono.impression {
   background-position: -96px 0;
@@ -286,22 +307,20 @@ nav{
 	color: #34495e;
 }
 
-.promo i {
-    margin: 40px 0;
-    color: #2c3e50;
-    font-size: 7rem;
-    display: block;
-}
-  .promo-caption {
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 0;
+#index-formations .card img{
+	max-height: 275px;
+  	min-height: 275px;
 }
 
 #index-boutique{
 	background-color: #ecf0f1;
 }
+
+#index-boutique .card img{
+	max-height: 275px;
+  	min-height: 275px;
+}
+
 
 #services{
 	background: #34495e;
@@ -459,8 +478,60 @@ nav{
 	background: #ffffff;
 }
 
+#section-about .promo {
+   color: #34495e;
+}
+
+#section-about .promo img {
+    margin: auto;
+    color: #34495e;
+    font-size: 7rem;
+    display: block;
+    width: 50%;
+}
+
+#section-about .promo-caption {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #34495e;
+}
+
+#about-strength{
+	background: #ffffff;
+}
+
 /* CONTACT */
 
 #section-contact{
 	background: #ffffff;
+}
+
+#section-contact #mapContainer{
+	margin-bottom: 2%;
+}
+
+
+#section-contact #map{
+	width: 100%;
+	overflow: hidden;
+	min-height: 500px;
+}
+
+#section-contact ul li{
+	padding: 4%;
+	font-size: 1.2rem;
+}
+
+#contact-form{
+	padding: 2%;
+}
+
+#contact-form button{
+	margin-top: 5%;
+}
+
+#section-contact img{
+	width: 80%;
 }
