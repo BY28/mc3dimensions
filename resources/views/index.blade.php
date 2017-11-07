@@ -179,14 +179,14 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 	
 </section>
 
-<section class="section" id="news">
-	<div class="container center">
+<section class="section" id="news" style="background: url('http://blog.zmorph3d.com/wp-content/uploads/2016/05/blog_header_mity_v2-1620x727.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+	<div class="container center" style="background-color: rgba(255, 255, 255, 0.8); padding: 1%;">
 		<div class="row">
 			<div class="col s12">
 				<h2>Evénements & nouveautés</h2>
 			</div>
 		</div>
-	</div>
+	
 	<div class="owl-carousel owl-theme container" id="banner-carousel" style="text-align: justify;margin-top: 2%">
 		<div>
 			<div class="row">
@@ -232,11 +232,11 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 				</div>
 			</div>
 		</div>
-	</div>
+	</div></div>
 </section>
 
-<section class="section" id="index-formations">
-	<div class="container">
+<section class="section no-pad" id="index-formations" style="background: #34495e">
+	<div class="">
 	<!--
 		<div class="row">
 			<div class="col l4 m4 s12">
@@ -272,10 +272,10 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 			</div>
 		</div>
 	-->
-
+	<!--
 		<div class="row">
 			<div class="col m4 center">
-				<h2>Besoin d'une formation ?</h2>
+				<h4>Besoin d'une formation ?</h4>
 				<p>Choisissez parmis l'une de nos différentes formations après l'achat de l'un de nos produits que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
 				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
 			</div>
@@ -283,12 +283,32 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 				<img src="{{ URL::to('src/img/illustrations/3design_pc.PNG') }}" width="100%">
 			</div>
 			<div class="col m4 center">
-				<h2>Contactez-nous !</h2>
+				<h4>Contactez-nous !</h4>
 				<p>Planifier un rendez-vous pour entamer votre formation ou avoir plus d'informations.</p>
 				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Contacter</a>
 			</div>
 		</div>
+	-->
+	<div class="row" style="background: url('http://www.3design.com/assets/images/mbr-2-2000x1500.jpg'); background-size: cover; background-repeat: no-repeat; background-position: left;">
+		<div class="col m6 s12 center" style="padding: 0%; color:#ffffff; text-align: justify;">
+			<div class="row">
+				<div class="col l8 m12 offset-l2" style="background: rgba(44, 62, 80, 0.6); padding: 4%; margin-top: 20%">
+					<h4>Besoin d'une formation ?</h4>
+			<p>Choisissez parmis l'une de nos différentes formations après l'achat de l'un de nos produits que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
+			<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange right" style="margin-top: 2%">Nos formations</a>
+				</div>
+			</div>
+			
+		</div>
 
+		<div class="col m6 s12 center" style="padding: 2%; background: #ecf0f1">
+			<h4>Prenez un rendez-vous !</h4>
+			<img src="{{ URL::to('src/img/illustrations/3design_pc.PNG') }}" width="60%">
+			<div>
+				<a href="{{ URL::to('contact') }}" class="waves-effect waves-light btn orange" style="margin-top: 2%;">Nous contacter</a>
+			</div>
+		</div>
+	</div>
 	</div>
 </section>
 
@@ -305,9 +325,11 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 	</div>
 </section>
 
-<section class="section" id="index-boutique">
-	<div class="container">
+<section class="section no-pad" id="index-boutique" style="background: url('{{URL::to('src/img/backgrounds/formlabs-form-2.jpg')}}'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+	<div style="background: rgba(44, 62, 80, 0.6);">
+	<div class="container center" style="padding: 4%">
 		<div class="row">
+			<!--
 			<div class="col l8 m8 s12">
 				  <div class="row">
 				    <div class="col l4 m6 s12">
@@ -351,8 +373,14 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 				<p>Notre équipe vous conseillera pour vous doter de l'un de nos produits. Un investissement plus que nécessaire pour votre développement qui vous offrira un gain de temps considérable.</p>
 				<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Liste des produits</a>
 			</div>
-			
+			-->
+			<div class="col s4 offset-s4" style="color: #ffffff">
+				<h2>Equipez-vous !</h2>
+				<p style="text-align: justify;">Notre équipe vous conseillera pour vous doter de l'un de nos produits. Un investissement plus que nécessaire pour votre développement qui vous offrira un gain de temps considérable.</p>
+				<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Liste des produits</a>
+			</div>
 		</div>
+	</div>
 	</div>
 </section>
 

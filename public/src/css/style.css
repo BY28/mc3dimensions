@@ -158,6 +158,7 @@ nav a{
     /*background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");*/
    	background-image: url("https://cdn.discordapp.com/attachments/194092101300912129/376105943424958475/ecosystem_wash-cure-L.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 
