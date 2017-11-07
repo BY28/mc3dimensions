@@ -5,7 +5,9 @@ Entreprise | MC3
 @endsection
 
 @section('header')
-	<h1>MC3 Algérie</h1>
+<div class="row center">
+	<h2>MC3 Algérie</h2>
+</div>
 @endsection
 
 @section('content')

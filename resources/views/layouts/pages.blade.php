@@ -13,16 +13,13 @@
 	</head>
 	<body>
 
-		<header>	
-			@include('partials.nav')
-		</header>
-
 		<main>
 
-			<section class="section center" id="header">
+			<section class="section no-pad-top" id="header">
+				@include('partials.nav')
 				<div class="container">	
-					<div id="banner-content">
-						<div id="header-particles"></div>
+					<div id="banner-content center">
+						<!-- <div id="header-particles"></div> -->
 							@yield('header')
 					</div>
 				</div>
@@ -84,6 +81,8 @@
 				</div>
 			</section>
 
+		 </div>
+
 		<div class="fixed-action-btn" id="commentsContainer" style="bottom: 45px; right: 24px;">
           <a href="{{ URL::to('comments') }}" class="btn-floating btn-large waves-effect waves-light pulse orange" onclick="$('.tap-target').tapTarget('open')" id="comments"><i class="material-icons">question_answer</i></a>
 		</div>
@@ -139,7 +138,7 @@
 
 			function updateColor() {
 			  var o = $(document).scrollTop() / 500;
-			    if (o > 0.800) { o = 0.8; }
+			    if (o > 0.950) { o = 0.95; }
 			    var e = $('nav');
 			    var currentColor = e.css('background-color');
 			    var rgb = currentColor.replace(/^(rgb|rgba)\(/, '').replace(/\)$/, '').replace(/\s/g, '').split(',');

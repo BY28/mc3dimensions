@@ -5,9 +5,8 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 @endsection
 
 @section('header')
-
-
-			<div class="owl-carousel" id="banner-carousel">
+		<!--
+			<div class="owl-carousel row center" id="banner-carousel">
 				<div data-hash="formation">
 					<h1>Formations</h1>
 					<h4>Formation 3D professionnelle</h4>
@@ -53,12 +52,40 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 					<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Découvrir</a>
 				</div>
 			</div>
-			<div id="banner-nav">
-				<a href="#formation" class="icon icon-mono formation">formation</a>
-				<a href="#impression" class="icon icon-mono impression">impression</a>
-				<a href="#boutique" class="icon icon-mono boutique">boutique+</a>
-				<a href="#domaines" class="icon icon-mono domaines">domaines</a>
+			<div class="row">
+				<div id="banner-nav" class="center offset-m2">
+					<a href="#formation" class="icon icon-mono formation">formation</a>
+					<a href="#impression" class="icon icon-mono impression">impression</a>
+					<a href="#boutique" class="icon icon-mono boutique">boutique+</a>
+					<a href="#domaines" class="icon icon-mono domaines">domaines</a>
+				</div>
 			</div>
+		-->
+
+			<div class="row center-align" style="margin-bottom: 8%">
+				<div class="col m4 hoverable" style="padding: 2%; background: rgba(255, 255, 255, 0.8); min-height: 450px; color: #34495e">
+					<h4>Impression 3D</h4>
+					<a href="{{ URL::to('print') }}" class="icon icon-mono impression revert">impression</a>
+					<p>MC3 fait vivre vos idées et accélère votre production! Notre équipe s'occupera de l'impression de vos différents objets avec une précision hors du commun.</p>
+					<a href="{{ URL::to('print') }}" class="waves-effect waves-light btn orange" style="margin-top: 10%">Impression 3D</a>
+				</div>
+				<div class="col m4 hoverable" style="padding: 2%; background: rgba(44, 62, 80, 0.6);min-height: 450px;">
+					<h4>Software & Hardware</h4>
+					<a href="{{ URL::to('products') }}" class="icon icon-mono boutique">boutique+</a>
+					<p>Nos produits englobent toute la chaine de production, des logiciels de conception 3D aux imprimantes. Vous pouvez vous en procurer dès maintentant!</p>
+					<a href="{{ URL::to('products') }}" class="waves-effect waves-light btn orange" style="margin-top: 10%">Produits</a>
+				</div>
+
+				<div class="col m4 hoverable" style="padding: 2%; background: rgba(255, 255, 255, 0.8); min-height: 450px; color: #34495e">
+					<h4>Formation 3D</h4>
+					<a href="{{ URL::to('formations') }}" class="icon icon-mono formation revert">formation</a>
+					<p>Avec nos formations vous aurez une maitrise parfaite des logiciels 3D. Notre expérience et savoir faire dans le domaine vous sera transmis par nos ingénieurs qualifiés</p>
+					<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange" style="margin-top: 10%">Formations</a>
+				</div>
+
+			</div>
+
+
 @endsection
 
 @section('content')
@@ -96,21 +123,37 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 		<div id="industries-content">
 			<div class="container">	
 				<h2>Boostez votre activité</h2>
-				<!-- <h4>La 3D dans tous les domaines</h4> -->
-				<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Tous les secteurs</a>
+				<!-- <h4>La 3D dans tous les domaines</h4>
+				<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange">Tous les secteurs</a> -->
 					  <div class="row">
-					    <div class="col l2 m4 s6  industry-item">
+					    <div class="col m4 s12 industry-item">
 					    	<a href="{{ URL::to('domaines/bijouterie') }}">
 						      	<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370942405559713792/exagon_ai.png">
 						      	<h5>Dentaire</h5>
 					    	</a>
+						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
 					    </div>
-					     <div class="col l2 m4 s6 industry-item">
+					     <div class="col m4 s12 industry-item">
 					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 						    <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370947412073644032/ring.png">
 						      	<h5>Bijouterie</h5>
 							</a>
+						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
 					    </div>
+					     <div class="col m4 s12  industry-item">
+					     	<a href="{{ URL::to('domaines/bijouterie') }}">
+						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
+						      	<h5>Prototypage</h5>
+						    </a>
+						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
+					    </div>
+					    <!--
 					     <div class="col l2 m4 s6  industry-item">
 					     	<a href="{{ URL::to('domaines/bijouterie') }}">
 					      <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370949699890577408/healthcare.png">
@@ -129,23 +172,75 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 						      	<h5>Architecture</h5>
 						    </a>
 					    </div>
-					     <div class="col l2 m4 s6  industry-item">
-					     	<a href="{{ URL::to('domaines/bijouterie') }}">
-						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
-						      	<h5>Prototypage</h5>
-						    </a>
-					    </div>
+						-->
 					  </div>
 			</div>
 		</div>
 	
 </section>
 
+<section class="section" id="news">
+	<div class="container center">
+		<div class="row">
+			<div class="col s12">
+				<h2>Evénements & nouveautés</h2>
+			</div>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme container" id="banner-carousel" style="text-align: justify;margin-top: 2%">
+		<div>
+			<div class="row">
+				<div class="col s5">
+					<img src="http://lorempicsum.com/nemo/350/200/6">
+				</div>
+				<div class="col s7">
+					<h3>Mardi: Journée portes ouvertes!</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="row">	
+				<div class="col s5">
+						<img src="http://lorempicsum.com/nemo/350/200/6">
+				</div>
+				<div class="col s7">
+					<h3>Mardi: Journée portes ouvertes!</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="row">
+				<div class="col s5">
+						<img src="http://lorempicsum.com/nemo/350/200/6">
+				</div>
+				<div class="col s7">
+					<h3>Mardi: Journée portes ouvertes!</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="section" id="index-formations">
 	<div class="container">
+	<!--
 		<div class="row">
 			<div class="col l4 m4 s12">
-				<h2>Formez-vous !</h2>
+				<h2>Besoin d'une formation ?</h2>
 				<p>Choisissez parmis l'une de nos différentes formations que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
 				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
 			</div>
@@ -176,6 +271,24 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 				  </div>
 			</div>
 		</div>
+	-->
+
+		<div class="row">
+			<div class="col m4 center">
+				<h2>Besoin d'une formation ?</h2>
+				<p>Choisissez parmis l'une de nos différentes formations après l'achat de l'un de nos produits que vous ferez en compagnie de l'un de nos formateurs hautement qualifié.</p>
+				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Nos formations</a>
+			</div>
+			<div class="col m4 center">
+				<img src="{{ URL::to('src/img/illustrations/3design_pc.PNG') }}" width="100%">
+			</div>
+			<div class="col m4 center">
+				<h2>Contactez-nous !</h2>
+				<p>Planifier un rendez-vous pour entamer votre formation ou avoir plus d'informations.</p>
+				<a href="{{ URL::to('formations') }}" class="waves-effect waves-light btn orange">Contacter</a>
+			</div>
+		</div>
+
 	</div>
 </section>
 
@@ -260,13 +373,11 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 		 $('#banner-carousel').owlCarousel({
 	       items:1,
 	       loop:true,
-	       center:true,
+   		   nav:true,
 	       margin:10,
-	       URLhashListener:true,
-	       autoplayHoverPause:true,
-	       /*autoplay:true,
-		   autoplayTimeout:10000,*/
-	       startPosition: 'URLHash'
+	       autoplay:true,
+        	autoplayHoverPause:true,
+		   autoplayTimeout:5000,
 	  	 });
 	});
 </script>

@@ -121,35 +121,45 @@ main {
   flex: 1 0 auto;
 }
  
-nav{
-	background: #2c3e50;
+.navbar-fixed nav{
+	background: #ffffff;
+}
+
+nav ul a{
+  color: #34495e;
+}
+
+nav a{
+  color: #34495e;
 }
 
 .page-footer{
-	background: #34495e;
-}
-
-.page-footer .footer-copyright{
-	background: #2c3e50;
-}
-
-.navbar-fixed {
-	position: absolute;z-index:999999999;
-} 
-
-#header{
-    background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");
-    background-size: contain;
+	background: #ffffff;
+  color: #34495e;
 }
 
 .page-footer a{
   text-decoration: none;
-  color: #ffffff;
+  color: #34495e;
+}
+
+.page-footer .footer-copyright{
+	background: #ffffff;
+  color: #34495e;
 }
 
 .footer-copyright a{
 	margin-left: 2%;
+  text-decoration: none;
+  color: #34495e;
 }
+
+#header{
+    /*background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");*/
+   	background-image: url("https://cdn.discordapp.com/attachments/194092101300912129/376105943424958475/ecosystem_wash-cure-L.jpg");
+    background-size: cover;
+}
+
 
 #in-progress{
 	background: #fff;
@@ -261,6 +271,46 @@ nav{
   background-position: -288px -96px;
 }
 
+/* REVERT */
+
+.icon-mono.formation.revert {
+ background-position: 0 -96px;
+  border-color: #34495e;
+}
+
+.icon-mono.formation.revert:hover {
+  background-color: #34495e;
+  background-position: 0 0;
+}
+
+#formation-form{
+	padding: 2%;
+}
+
+/* impression */
+.icon-mono.impression.revert{
+  background-position: -96px -96px;
+  border-color: #34495e;
+}
+
+.icon-mono.impression.revert:hover {
+  background-color: #34495e;
+  background-position: -96px 0;
+}
+
+/* vente */
+.icon-mono.boutique.revert {
+  background-position: -192px -96px;
+  border-color: #34495e;
+}
+
+.icon-mono.boutique.revert:hover {
+	background-color: #34495e;
+ 	background-position: -192px 0;
+}
+
+/* */
+
 #partners{
 	background-color: #ecf0f1;
 }
@@ -299,8 +349,8 @@ nav{
 }
 
 #index-formations{
-	background-color: #34495e;
-	color: #ffffff;
+	background-color: #ecf0f1;
+	color: #34495e;
 }
 
 #index-formations .card{
@@ -331,10 +381,17 @@ nav{
 }
 
 
+/* NEWS */
+
+#news {
+	background-color: #ffffff;
+}
+
 /* FORMATIONS */
 
 #formations{
-	background-color: #fff;
+	background-color: #ffffff;
+	color: #34495e;
 }
 
 	/* CATPION */
@@ -447,7 +504,7 @@ nav{
 
 #section-domaines{
 	background-color: #ffffff;
-	color: #ffffff;
+	color: #34495e;
 }
 
 

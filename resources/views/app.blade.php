@@ -115,7 +115,7 @@ input[type=range]:focus::-ms-fill-upper {
    ========================================================================== */
 
 </style>
-
+<link rel="stylesheet" type="text/css" href="{{ URL::to('src/css/loader.css') }}">
 @endsection
 
 @section('content')
@@ -125,13 +125,25 @@ input[type=range]:focus::-ms-fill-upper {
 		<div class="row">
 			<div class="col s12" id="appWrapper">
 				<div id="appContainer">
-					
+						<img src="https://cdn.discordapp.com/attachments/194092101300912129/375733781870673921/movezoom.png" class="responsive-img" style="position: absolute; top: 1%; left: 1%; width: 5%">
+						<div id="loader" style="position: absolute; top: 25%; left: 38%; color: #ffffff; text-align: center; display: block">
+							<h2>MC3 Viewer</h2>
+							<p>Object Loading...</p>
+							<div class="spinner">
+							  <div class="bounce1"></div>
+							  <div class="bounce2"></div>
+							  <div class="bounce3"></div>
+							</div>
+						</div>
 						<p class="range-field" id="clipContainer" style="position: absolute; bottom: 5%; right: 5%;">
-					      <input type="range" id="constant" step="0.1" min="-100" max="100"/><a class="btn-floating waves-effect waves-light white tooltipped" id="clip-close" data-position="right" data-delay="50" data-tooltip="Close"><i class="material-icons orange-text">close</i></a>
+					      <input type="range" id="constant" step="0.1" min="-100" max="100"/><a class="btn-floating waves-effect waves-light white tooltipped right" id="clip-close" data-position="right" data-delay="50" data-tooltip="Close"><i class="material-icons orange-text">close</i></a><a class="btn-floating waves-effect waves-light white tooltipped" id="clip-revert" data-position="right" data-delay="50" data-tooltip="Revert"><i class="material-icons orange-text">repeat</i></a>
 					    </p>
 				</div>
 			</div>
 			<div class="col s12 white z-depth-1 right-align" id="options">
+
+				<a href="{{ URL::to('objects') }}" class="btn-floating btn-large waves-effect waves-light orange tooltipped left" data-position="bottom" data-delay="50" data-tooltip="Objects" style="top: 15%"><i class="material-icons">arrow_back</i></a>
+				<!-- <a class="btn-floating btn-large waves-effect waves-light orange tooltipped" id="reset" data-position="bottom" data-delay="50" data-tooltip="Reset"><i class="material-icons">replay</i></a> -->
 				<a class="btn-floating btn-large waves-effect waves-light orange tooltipped" id="rotate" data-position="bottom" data-delay="50" data-tooltip="Rotation"><i class="material-icons">3d_rotation</i></a>
 				<a class="btn-floating btn-large waves-effect waves-light orange tooltipped" id="wireframe" data-position="bottom" data-delay="50" data-tooltip="Wireframe"><i class="material-icons">grid_on</i></a>
 				<div class="fixed-action-btn vertical" style="position: relative; display: inline-block; right: 0%; top: 0%">
@@ -310,7 +322,7 @@ MC3Object.prototype.load = function(src)
 	this.material = new THREE.MeshPhongMaterial({
 		color: 0xecf0f1,
 		specular: 0xecf0f1,
-		shininess: 200,
+		shininess: 100,
 		side: THREE.DoubleSide,
 		clippingPlanes: [ this.localPlane ],
 		clipShadows: true,
@@ -319,14 +331,15 @@ MC3Object.prototype.load = function(src)
 					this.material.shading = THREE.SmoothShading
 	this.loader.load( src, function ( geometry ) {
 					_this.object = new THREE.Mesh( geometry, _this.material );
-					_this.object.position.set( 0, 0, 0);
-					_this.object.rotation.set( -90*Math.PI/180, 0, 0 );
 					_this.object.castShadow = true;
 					_this.object.receiveShadow = true;
 					_this.loaded = true;
 					_this.box = new THREE.Box3().setFromObject( _this.object );
+					_this.object.position.set( 0, 0, 0);
+					_this.object.rotation.set( -90*Math.PI/180, 0, 0 );
 					_this.object.geometry.mergeVertices();
 	                _this.object.geometry.computeVertexNormals();
+	                _this.box.getCenter( _this.object.position );
 	                _this.mesh.add(_this.object);
 				} );
 }
@@ -338,15 +351,17 @@ MC3Object.prototype.load = function(src)
 function loop()
 {
 	app.updateControls();
-
 	if(mc3Object.loaded)
 	{
+		loader.style.display = 'none';
         //app.camera.position.set(0, mc3Object.box.min.y + ((mc3Object.box.getSize().y)/2), mc3Object.box.max.y+((mc3Object.box.getSize().y)/2));
-	    app.camera.position.set(mc3Object.object.position.x, mc3Object.object.position.y, mc3Object.object.position.z);
-	    app.camera.position.z += mc3Object.box.getSize().y;
-	    app.camera.lookAt(mc3Object.object.position);
+        app.camera.position.set(mc3Object.object.position.x, mc3Object.object.position.y, mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x);
+        mc3Object.object.rotation.set(-90*Math.PI/180, 0, 0);
+        mc3Object.object.position.set(0, 0, 0);
+		app.camera.lookAt(mc3Object.object.position);
 		mc3Object.loaded = false;
 	}
+
 
 	if(mc3Object.rotate)
 	{
@@ -364,7 +379,6 @@ function loop()
 
 var app;
 var mc3Object;
- var clock = new THREE.Clock();
 function init()
 {
 	app = new App();
@@ -378,15 +392,24 @@ function init()
 	app.renderer.clippingPlanes = Empty; // GUI sets it to globalPlanes
 	app.renderer.localClippingEnabled = false;
 
-	mc3Object.load("{{ URL::to('src/assets/models') }}/" + 'ring.stl');
+	mc3Object.load("{{ URL::to('src/assets/models') }}/" + "{{$object}}" +'.stl');
 
 	loop();
 }
 
+var loader = document.getElementById('loader');
+
 var constant = document.getElementById('constant');
 constant.addEventListener("input", function() {
     mc3Object.object.material.clippingPlanes[0].constant = constant.value;
-}, false); 
+}, false);
+
+var revert = document.getElementById('clip-revert');
+revert.addEventListener("click", function(){
+	mc3Object.object.material.clippingPlanes[0].normal.x = -mc3Object.object.material.clippingPlanes[0].normal.x;
+	mc3Object.object.material.clippingPlanes[0].normal.y = -mc3Object.object.material.clippingPlanes[0].normal.y;
+	mc3Object.object.material.clippingPlanes[0].normal.z = -mc3Object.object.material.clippingPlanes[0].normal.z; 
+});
 
 var wireframe = document.getElementById('wireframe');
 wireframe.addEventListener("click", function() {
@@ -410,6 +433,8 @@ clipClose.addEventListener("click", function() {
 
 var clipX = document.getElementById('clip-x');
 clipX.addEventListener("click", function() {
+	constant.max = Math.ceil(mc3Object.box.getSize().x);
+	constant.min = Math.floor(-mc3Object.box.getSize().x);
     mc3Object.rotate = false;
 	createjs.Tween.get(mc3Object.object.rotation, {override:true})
 	        .to({x: -90*Math.PI/180, y: 0, z: 0}, 250);
@@ -420,6 +445,8 @@ clipX.addEventListener("click", function() {
 
 var clipY = document.getElementById('clip-y');
 clipY.addEventListener("click", function() {
+	constant.max = Math.ceil(mc3Object.box.getSize().z);
+	constant.min = Math.floor(-mc3Object.box.getSize().z);
     mc3Object.rotate = false;
 	createjs.Tween.get(mc3Object.object.rotation, {override:true})
 	        .to({x: -90*Math.PI/180, y: 0, z: 0}, 250);
@@ -430,6 +457,8 @@ clipY.addEventListener("click", function() {
 
 var clipZ = document.getElementById('clip-z');
 clipZ.addEventListener("click", function() {
+	constant.max = Math.ceil(mc3Object.box.getSize().y);
+	constant.min = Math.floor(-mc3Object.box.getSize().y);
     mc3Object.rotate = false;
 	createjs.Tween.get(mc3Object.object.rotation, {override:true})
 	        .to({x: -90*Math.PI/180, y: 0, z: 0}, 250);
@@ -442,11 +471,90 @@ var viewTop = document.getElementById('view-top');
 viewTop.addEventListener("click", function() {
 	app.renderer.localClippingEnabled = false;
 	clipContainer.style.display = "none";
+
 	createjs.Tween.get(app.camera.position, {override:true})
-	        .to({x: mc3Object.object.position.x, y: mc3Object.box.getSize().y, z: mc3Object.object.position.z}, 250);
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
 	app.camera.lookAt(mc3Object.object.position);
 }, false);
 
+var viewBottom = document.getElementById('view-bottom');
+viewBottom.addEventListener("click", function() {
+	app.renderer.localClippingEnabled = false;
+	clipContainer.style.display = "none";
+
+	createjs.Tween.get(app.camera.position, {override:true})
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: 180*Math.PI/180, y: 0, z: 0}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+
+	app.camera.lookAt(mc3Object.object.position);
+}, false);
+
+var viewFront = document.getElementById('view-front');
+viewFront.addEventListener("click", function() {
+	app.renderer.localClippingEnabled = false;
+	clipContainer.style.display = "none";
+
+	createjs.Tween.get(app.camera.position, {override:true})
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: -90*Math.PI/180, y: 0, z: 0}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+
+	app.camera.lookAt(mc3Object.object.position);
+}, false);
+
+var viewBack = document.getElementById('view-back');
+viewBack.addEventListener("click", function() {
+	app.renderer.localClippingEnabled = false;
+	clipContainer.style.display = "none";
+
+	createjs.Tween.get(app.camera.position, {override:true})
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: -90*Math.PI/180, y: 0, z: 180*Math.PI/180}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+
+	app.camera.lookAt(mc3Object.object.position);
+}, false);
+
+var viewRight = document.getElementById('view-right');
+viewRight.addEventListener("click", function() {
+	app.renderer.localClippingEnabled = false;
+	clipContainer.style.display = "none";
+
+	createjs.Tween.get(app.camera.position, {override:true})
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: -90*Math.PI/180, y: 0, z: -90*Math.PI/180}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+
+	app.camera.lookAt(mc3Object.object.position);
+}, false);
+
+var viewLeft = document.getElementById('view-left');
+viewLeft.addEventListener("click", function() {
+	app.renderer.localClippingEnabled = false;
+	clipContainer.style.display = "none";
+
+	createjs.Tween.get(app.camera.position, {override:true})
+	        .to({x: mc3Object.object.position.x, y: mc3Object.object.position.y, z: mc3Object.object.position.z+mc3Object.box.getSize().y+mc3Object.box.getSize().x}, 250);
+	createjs.Tween.get(mc3Object.object.rotation, {override:true})
+	        .to({x: -90*Math.PI/180, y: 0, z: 90*Math.PI/180}, 250);
+	createjs.Tween.get(mc3Object.object.position, {override:true})
+	        .to({x: 0, y: 0, z: 0}, 250);
+
+	app.camera.lookAt(mc3Object.object.position);
+}, false);
 
 
 

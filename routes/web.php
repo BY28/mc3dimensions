@@ -65,8 +65,12 @@ Route::get('inprogress', function () {
     return view('inprogress');
 });
 
-Route::get('app', function(){
-    return view('app');
+Route::get('objects', function(){
+    return view('objects');
+});
+
+Route::get('objects/{object}', function($object){
+    return view('app')->withObject($object);
 });
 
 Route::group(['prefix' => 'comments'], function(){

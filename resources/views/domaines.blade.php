@@ -5,9 +5,9 @@ Impression 3D domaines | MC3
 @endsection
 
 @section('header')
-	<h1>Des solutions faites pour vous</h1>
-	<div class="row banner-text">
-		<div class="col s6 offset-s3">
+	<div class="row center">
+		<h2>Des solutions faites pour vous</h2>
+		<div class="col s6 offset-s3 banner-text">
 			<p>Quelques soit votre secteur, il est possible d'améliorer grandement son efficacité et sa rentabilité grâce à nos différentes solutions.</p>	
 		</div>
 	</div>
@@ -24,7 +24,7 @@ Impression 3D domaines | MC3
 			</div>
 			
 		</div>
-		<div class="row blue lighten-2">
+		<div class="row"> <!-- blue lighten-2 -->
 			<div class="col s4 offset-s2 center hide-on-small-only">
 				<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372758599132512256/dentist-2351844.png">
 			</div>
@@ -34,7 +34,7 @@ Impression 3D domaines | MC3
 				<a href="{{ URL::to('domaines/bijouterie') }}" class="waves-effect waves-light btn orange">En savoir plus</a>
 			</div>
 		</div>
-		<div class="row purple lighten-2">
+		<div class="row"> <!-- purple lighten-2 -->
 			<div class="col m4 offset-m2">
 				<h3>Bijouterie</h3>
 				<p>Les bijoutiers ont complètement adopté la nouvelle méthode de travail consistant à modéliser et imprimer en 3D leurs bijoux. Cette méthode rapide, efficace et surtout très précise a conquis bon nombre d'entre eux et nos clients en sont satisfait à 100%</p>
@@ -44,7 +44,7 @@ Impression 3D domaines | MC3
 				<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372818495144198155/bijouterie.png">
 			</div>
 		</div>
-		<div class="row red lighten-1">
+		<div class="row"> <!-- red lighten-1 -->
 			<div class="col m4 offset-m2 center hide-on-small-only">
 				<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372797024397164544/medical.png">
 			</div>
@@ -54,7 +54,7 @@ Impression 3D domaines | MC3
 				<a href="{{ URL::to('domaines/bijouterie') }}" class="waves-effect waves-light btn orange">En savoir plus</a>
 			</div>
 		</div>
-		<div class="row blue-grey lighten-2">
+		<div class="row"> <!-- blue-grey lighten-2 -->
 			<div class="col m4 offset-m2">
 				<h3>Mécanique</h3>
 				<p>Nous vous permettons d'obtenir des objets mécaniques complexes et performants difficilement réalisables par d'autres méthodes de fabrication</p>
@@ -64,7 +64,7 @@ Impression 3D domaines | MC3
 				<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372817126819627009/mechanic.png">
 			</div>
 		</div>
-		<div class="row orange lighten-2">
+		<div class="row"> <!-- orange lighten-2 -->
 			<div class="col m4 offset-m2 center hide-on-small-only">
 				<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372844253409312779/archi.png">
 			</div>
@@ -74,7 +74,7 @@ Impression 3D domaines | MC3
 				<a href="{{ URL::to('domaines/bijouterie') }}" class="waves-effect waves-light btn orange">En savoir plus</a>
 			</div>
 		</div>
-		<div class="row light-green lighten-2">
+		<div class="row"> <!-- light-green lighten-2 -->
 			<div class="col m4 offset-m2">
 				<h3>Prototypage</h3>
 				<p>Vous avez une idée et vos voulez la concrétiser ? Nos services sont fait pour vous.</p>

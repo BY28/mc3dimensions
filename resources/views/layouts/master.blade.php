@@ -13,16 +13,17 @@
 	</head>
 	<body>
 
-		<header>	
-			@include('partials.nav')
-		</header>
+		
 
 		<main>
 
-			<section class="section center" id="header">
+			<section class="section no-pad-top" id="header">
+
+				@include('partials.nav')
+
 				<div class="container">	
 					<div id="banner-content">
-						<div id="header-particles"></div>
+						<!-- <div id="header-particles"></div> -->
 							@yield('header')
 					</div>
 				</div>
@@ -75,7 +76,7 @@
 
 			function updateColor() {
 			  var o = $(document).scrollTop() / 500;
-			    if (o > 0.800) { o = 0.8; }
+			    if (o > 0.9500) { o = 0.95; }
 			    var e = $('nav');
 			    var currentColor = e.css('background-color');
 			    var rgb = currentColor.replace(/^(rgb|rgba)\(/, '').replace(/\)$/, '').replace(/\s/g, '').split(',');
@@ -86,8 +87,10 @@
 			updateColor();
 
 		</script>
+		<!-- 
 		<script type="text/javascript" src="{{ URL::to('src/particles/js/particles.min.js') }}"></script>
 		<script type="text/javascript">particlesJS.load("header-particles", "{{ URL::to('src/particles/json/particles.json') }}", function(){});</script>
+		-->
 		@yield('scripts')
 
 	</body>
