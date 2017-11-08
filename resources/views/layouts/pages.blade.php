@@ -27,7 +27,7 @@
 			
 			@yield('sidebar')
 			@yield('content')
-
+			<!--
 			<section class="section" id="services">
 			
 				<div class="container">
@@ -52,7 +52,7 @@
 				</div>
 		
 			</section>
-
+			-->
 			<section class="section center" id="partners">
 				<div class="container">	
 					<div class="owl-carousel" id="partners-carousel">
@@ -83,16 +83,6 @@
 
 		 </div>
 
-		<div class="fixed-action-btn" id="commentsContainer" style="bottom: 45px; right: 24px;">
-          <a href="{{ URL::to('comments') }}" class="btn-floating btn-large waves-effect waves-light pulse orange" onclick="$('.tap-target').tapTarget('open')" id="comments"><i class="material-icons">question_answer</i></a>
-		</div>
-		<div class="tap-target" data-activates="comments">
-		    <div class="tap-target-content">
-		      <h5>Contribuez au développement !</h5>
-		      <p>Envoyez-nous vos remarques, critiques et idées d'améliorations. Vos avis sont les bienvenus et nous aideront lors du développement.</p>
-		    </div>
-		 </div>
-
 		</main>
 
 		<footer>	
@@ -119,21 +109,6 @@
 
 			$(".button-collapse").sideNav();
 
-			$(document).ready(function(){
-		      	$('.tap-target').tapTarget('open');
-		      	setTimeout(
-			    function() {
-			      $('.tap-target').tapTarget('close');
-			  }, 3000);
-
-		      	$('#commentsContainer').hover(function() {
-		      		$('.tap-target').tapTarget('open');
-				});
-		      	$('.tap-target').mouseleave(function() {
-		      		$('.tap-target').tapTarget('close');
-				});
-		    });
-        
 			$(document).on('scroll', function (e) { updateColor(); });
 
 			function updateColor() {

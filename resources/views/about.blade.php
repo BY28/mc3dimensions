@@ -5,8 +5,10 @@ Entreprise | MC3
 @endsection
 
 @section('header')
-<div class="row center">
-	<h2>MC3 Algérie</h2>
+<div class="row center"  style="margin-top: 4%">
+	<div class="col s6 offset-s3" style="padding: 10%; background-color: rgba(255, 255, 255, 0.8);">
+		<h3>MC3 Algérie</h3>
+	</div>
 </div>
 @endsection
 
@@ -71,12 +73,12 @@ Entreprise | MC3
 
 				<div class="row">
 
-					<div class="col m4 offset-m3 s12">
+					<div class="col m3 offset-m3 s12">
 						<h3>Services et formations</h3>
 						<p>MC3 offre une panoplie complète de curriculum de formations sur les technologies 3D couvrant des domaines tels que la conception de surfaces, moules, optimisation éléments finis, structure, mécanique des fluides, injection plastique et gestion électronique de documents. Toutes les formations sont dispensées par des experts certifiées disposant d’une double compétence industrielle et sur les produits.</p>
 					</div>
 
-					<div class="col m2">
+					<div class="col m3">
 						<img class="responsive-img  materialboxed" src="https://scontent-mrs1-1.xx.fbcdn.net/v/t31.0-8/18623443_1922411637972552_5855922399441058363_o.jpg?oh=39625ddae24c13357a24a965c05c2929&oe=5A68FDDB">
 					</div>
 					

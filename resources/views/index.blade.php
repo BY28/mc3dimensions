@@ -301,7 +301,7 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 			
 		</div>
 
-		<div class="col m6 s12 center" style="padding: 2%; background: #ecf0f1">
+		<div class="col m6 s12 center" style="padding: 2%; background: rgba(255, 255, 255, 0.8);">
 			<h4>Prenez un rendez-vous !</h4>
 			<img src="{{ URL::to('src/img/illustrations/3design_pc.PNG') }}" width="60%">
 			<div>

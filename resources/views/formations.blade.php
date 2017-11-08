@@ -5,20 +5,19 @@ Formations | MC3
 @endsection
 
 @section('header')
-	<h1>Choisissez votre formation</h1>
-	<h4>Formation 3D professionnelle</h4>
-	<div class="row banner-text">
-		<div class="col s6 offset-s3">
-			<p>Recevez une formation de qualité donné par nos ingénieurs expérimentés</p>	
-		</div>
+<div class="row center"  style="margin-top: 4%">
+	<div class="col s6 offset-s3" style="padding: 10%; background-color: rgba(255, 255, 255, 0.8);">
+		<h3>Formation 3D</h3>
+		<p>Recevez une formation de qualité donné par nos ingénieurs expérimentés</p>	
 	</div>
+</div>
 @endsection
 
 @section('content')
 	<section class="section" id="formations">
 		
 		<div class="container">
-			<h1>Nos formations</h1>
+			<h2>Nos formations</h2>
 			<div class="row center">		
 				<ul class="formations-caption">
 					<li>

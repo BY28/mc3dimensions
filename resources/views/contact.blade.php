@@ -5,9 +5,11 @@ Contact | MC3
 @endsection
 
 @section('header')
-<div class="row center">
-	<h2>Contactez-nous !</h2>
-	<p>MC3 Algérie fait tout pour être à l'écoute et au plus proche de vous</p>
+<div class="row center"  style="margin-top: 4%">
+	<div class="col s6 offset-s3" style="padding: 5%; background-color: rgba(255, 255, 255, 0.8);">
+		<h3>Contactez-nous !</h3>
+		<p>MC3 Algérie fait tout pour être à l'écoute et au plus proche de vous</p>
+	</div>
 </div>
 @endsection
 
