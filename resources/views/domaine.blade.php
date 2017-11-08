@@ -1,16 +1,36 @@
-@extends('layouts.pages')
+@extends('layouts.apps')
 
 @section('title')
 Bijouterie | MC3
 @endsection
 
+<!--
 @section('header')
 	<h1>Bijouterie</h1>
 	<h4>Accélérez vos processus de production</h4>
 	<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">Demander une impression 3D</a>
 @endsection
+-->
+
+@section('nav-content')
+
+	<section class="white">
+		<div class="container">
+			
+			<div class="nav-content">
+		      <ul class="tabs">
+		        <li class="tab"><a href="#dentaire">Dentaire</a></li>
+		        <li class="tab"><a href="#joaillerie">Joaillerie</a></li>
+		        <li class="tab"><a href="#prototypage">Prototypage</a></li>
+		      </ul>
+		    </div>
+			
+		</div>
+	</section>
+@endsection
 
 @section('content')
+
 	<section class="section" id="section-domaine">
 		
 		<div class="container">
@@ -40,45 +60,6 @@ Bijouterie | MC3
 				</div>
 			</div>
 		</div>
-
-		 <div class="row center">
-		    <div class="col s2  industry-item">
-		    	<a href="{{ URL::to('domaines/bijouterie') }}">
-			      	<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370942405559713792/exagon_ai.png">
-			      	<h5>Dentaire</h5>
-		    	</a>
-		    </div>
-		     <div class="col s2 industry-item">
-		     	<a href="{{ URL::to('domaines/bijouterie') }}">
-			    <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370947412073644032/ring.png">
-			      	<h5>Bijouterie</h5>
-				</a>
-		    </div>
-		     <div class="col s2  industry-item">
-		     	<a href="{{ URL::to('domaines/bijouterie') }}">
-		      <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370949699890577408/healthcare.png">
-			      	<h5>Santé</h5>
-			    </a>
-		    </div>
-		    <div class="col s2  industry-item">
-		    	<a href="{{ URL::to('domaines/bijouterie') }}">
-			     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370954231781523456/mecaNIK.png">
-			      	<h5>Mécanique</h5>
-			    </a>
-		    </div>
-		    <div class="col s2  industry-item">
-		    	<a href="{{ URL::to('domaines/bijouterie') }}">
-			     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370956082643992576/home.png">
-			      	<h5>Architecture</h5>
-			    </a>
-		    </div>
-		     <div class="col s2  industry-item">
-		     	<a href="{{ URL::to('domaines/bijouterie') }}">
-			     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
-			      	<h5>Prototypage</h5>
-			    </a>
-		    </div>
-		 </div>
 
 	</section>
 

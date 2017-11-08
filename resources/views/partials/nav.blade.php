@@ -32,5 +32,8 @@
           <li><a href="#">Inscription</a></li>
         </ul>
       </div>
+
+      @yield('nav-content')
+
     </nav>
 </div>

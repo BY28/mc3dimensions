@@ -88,6 +88,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #f39c12;
 }
 
+.tabs .tab a {
+  color: #34495e;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: orange;
+}
+
+.tabs .indicator {
+  background-color: orange;
+}
+
 .dropdown-content li > a{
 	color: #34495e;
 }
