@@ -4,6 +4,94 @@
 Formations, Impression 3D, Logiciels et matériels informatique | MC3
 @endsection
 
+@section('styles')
+
+<style type="text/css">
+	
+	#img-upload {
+	  animation: bounceIn;
+	  animation-iteration-count: infinite;
+	  animation-duration: 6s;
+	}	
+
+	#img-print {
+	  animation: bounceInPrint;
+	  animation-iteration-count: infinite;
+	  animation-duration: 6s;
+	}	
+
+	#img-reception {
+	  animation: bounceInReception;
+	  animation-iteration-count: infinite;
+	  animation-duration: 6s;
+	}
+
+	@keyframes bounceIn {
+	    0% {
+	        -webkit-transform: scale(1);
+	    }
+	    3% {
+	        -webkit-transform: scale(0.5);
+	    }
+	    6% {
+	        -webkit-transform: scale(1.2);
+	    }
+	    9% {
+	        -webkit-transform: scale(0.8);
+	    }
+	    12% {
+	        -webkit-transform: scale(1);
+	    }
+	    100% {
+	        -webkit-transform: scale(1);
+	    }
+	}
+
+	@keyframes bounceInPrint {
+	    10% {
+	        -webkit-transform: scale(1);
+	    }
+	    13% {
+	        -webkit-transform: scale(0.5);
+	    }
+	    16% {
+	        -webkit-transform: scale(1.2);
+	    }
+	    19% {
+	        -webkit-transform: scale(0.8);
+	    }
+	    22% {
+	        -webkit-transform: scale(1);
+	    }
+	    100% {
+	        -webkit-transform: scale(1);
+	    }
+	}
+
+	@keyframes bounceInReception {
+	    20% {
+	        -webkit-transform: scale(1);
+	    }
+	    23% {
+	        -webkit-transform: scale(0.5);
+	    }
+	    26% {
+	        -webkit-transform: scale(1.2);
+	    }
+	    29% {
+	        -webkit-transform: scale(0.8);
+	    }
+	    32% {
+	        -webkit-transform: scale(1);
+	    }
+	    100% {
+	        -webkit-transform: scale(1);
+	    }
+	}
+</style>
+
+@endsection
+
 @section('header')
 		<!--
 			<div class="owl-carousel row center" id="banner-carousel">
@@ -99,9 +187,9 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 			<div><img src="{{ URL::to('src/img/partners/solidworks.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/3dsystems.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/stratasys.png') }}"></div>
-			<div><img src="{{ URL::to('src/img/partners/apc.png') }}"></div>
-			<div><img src="{{ URL::to('src/img/partners/aruba.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/creaform.png') }}"></div>
+			<!--<div><img src="{{ URL::to('src/img/partners/apc.png') }}"></div>
+			<div><img src="{{ URL::to('src/img/partners/aruba.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/digium.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/epson.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/hewlettpackard.png') }}"></div>
@@ -113,7 +201,7 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 			<div><img src="{{ URL::to('src/img/partners/qnap.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/smart.png') }}"></div>
 			<div><img src="{{ URL::to('src/img/partners/tplink.png') }}"></div>
-			<div><img src="{{ URL::to('src/img/partners/veritas.png') }}"></div>
+			<div><img src="{{ URL::to('src/img/partners/veritas.png') }}"></div>-->
 		</div>
 	</div>
 </section>
@@ -131,8 +219,7 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 						      	<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370942405559713792/exagon_ai.png">
 						      	<h5>Dentaire</h5>
 					    	</a>
-						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<p>Mordernisez votre façon de travailler en adoptant l'impression 3D comme méthode.</p>
 						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
 					    </div>
 					     <div class="col m4 s12 industry-item">
@@ -140,8 +227,7 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 						    <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370947412073644032/ring.png">
 						      	<h5>Bijouterie</h5>
 							</a>
-						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<p>Améliorez la précision de vos bijoux et leur temps de conception!</p>
 						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
 					    </div>
 					     <div class="col m4 s12  industry-item">
@@ -149,8 +235,7 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 						     <img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/370958148024139776/prot.png">
 						      	<h5>Prototypage</h5>
 						    </a>
-						      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						      	<p>Vous avez une idée et vos voulez la concrétiser ?  Nos services sont fait pour vous.</p>
 						      	<a href="{{ URL::to('domaines') }}" class="waves-effect waves-light btn orange white-text">Découvrir</a>
 					    </div>
 					    <!--
@@ -312,15 +397,31 @@ Formations, Impression 3D, Logiciels et matériels informatique | MC3
 	</div>
 </section>
 
-<section class="section center" id="index-impression">
+<section class="section center" id="index-impression" style="background: url('https://cdn.discordapp.com/attachments/194092101300912129/377919144403927041/map.png'); background-position: center; background-repeat: no-repeat;">
 	
 	<div class="container">	
 		<h2>Donnez vie à vos idées</h2>
+		<!--
 		<div class="row">
 			<div class="col s12">
 				<img src="{{ URL::to('src/img/backgrounds/print-steps.png') }}" class="responsive-img">
 			</div>
 		</div>
+	-->
+	<div class="row">
+		<div class="col m4">
+			<img src="https://cdn.discordapp.com/attachments/194092101300912129/377922881641775117/1.png" id="img-upload">
+			<h4>Envoyez vos fichiers</h4>
+		</div>
+		<div class="col m4">
+			<img src="https://cdn.discordapp.com/attachments/194092101300912129/377919127333109760/22.png" id="img-print">
+			<h4>Nous imprimons en 3D</h4>
+		</div>
+		<div class="col m4">
+			<img src="https://cdn.discordapp.com/attachments/194092101300912129/377922801664786452/32.png" id="img-reception">
+			<h4>Vous les recevez</h4>
+		</div>
+	</div>
 		<a href="{{ URL::to('inprogress') }}" class="waves-effect waves-light btn orange">PASSER UNE COMMANDE</a>
 	</div>
 </section>

@@ -8,6 +8,7 @@
           <li><a href="{{ URL::to('blog') }}">Blog</a></li>
           <li><a href="{{ URL::to('about') }}">A propos</a></li>
           <li><a href="{{ URL::to('contact') }}">Contact</a></li>
+          <li><a href="{{ URL::to('contact') }}">Contact</a></li>
           <li><a href="#">Connexion</a></li>
           <li><a href="#">Inscription</a></li>
         </ul>
@@ -32,8 +33,6 @@
           <li><a href="#">Inscription</a></li>
         </ul>
       </div>
-
-      @yield('nav-content')
 
     </nav>
 </div>
