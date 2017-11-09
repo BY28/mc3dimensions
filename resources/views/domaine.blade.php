@@ -4,6 +4,16 @@
 Bijouterie | MC3
 @endsection
 
+@section('styles')
+
+<style type="text/css">
+	main{
+		background: #fff;
+	}
+</style>
+
+@endsection
+
 <!--
 @section('header')
 	<h1>Bijouterie</h1>
