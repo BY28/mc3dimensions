@@ -38,58 +38,145 @@ Bijouterie | MC3
 	</section>
 
 	<div id="dentaire">
-	
+		
+		<div id="header-dentaire" class="white"   style="background: url('{{ URL::to('src/img/backgrounds/dental.jpg') }}'); background-size: cover; background-position: center;min-height: 550px;">
+			<<div class="container">
+				<div class="row">
+					<div class="col s6" style="margin-top: 6%;">	
+						<h3>Modernisez votre activité avec l'impression 3D</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col s6">
+					<img src="https://formlabs.com/media/upload/_thumbs/lt_bp_cartridge_parts.jpg.680x383_q80_crop-smart.jpg">
+				</div>
+				<div class="col s6">
+					<h5>Résine Dental LT Clear</h5>
+					<p>Biocompatible classe 2, la résine Dental LT Claire peut être au contact sur le long terme. Elle permet d'imprimer des gouttières, attelles, splints et tout outil orthodontique utilisable sur le long terme. Vous pouvez proposer des nightguards sur mesure dans l'heure à vos patients. Sa couleur claire et transparente permet une précision optimale. Téléchargez notre guide pour plus d'informations.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h5>Résine Grise Classique</h5>
+					<p>La résine Grise a un rendu mat qui permet d'imprimer des pièces détaillées et fidèles. Elle s'utilise très simplement pour travailler sur des moules, des modèles orthodontiques et des gouttières. Son coût peu élevé en fait un matériau de choix pour les modèles éducatifs.</p>
+				</div>
+				<div class="col s6">
+					<img src="https://formlabs.com/media/upload/_thumbs/dental-grey-media-card2x_vjCz88j.jpg.680x383_q80_crop-smart.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<img src="https://formlabs.com/media/upload/_thumbs/denture-media-card2x_qmfpOxE.jpg.680x383_q80_crop-smart.jpg">
+				</div>
+				<div class="col s6">
+					<h5>Dentiers 3D</h5>
+					<p>99% match Nous repoussons les limites de l'impression 3D pour dentistes en permettant d'imprimer directement des dentiers en 3D, à même votre bureau.</p>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 
 	<div id="joaillerie">
-		
-		<section class="section no-pad-top" id="section-domaine">
-			<div id="header-joaillerie" class="white"   style="background: url('{{ URL::to('src/img/backgrounds/jewelry.jpg') }}'); background-size: cover; background-position: center;min-height: 550px;">
-				<div class="container">
-					<div class="row">
-						<div class="col s6" style="margin-top: 6%;">
-							<h3>Bijouterie & Joaillerie</h3>
-							<p>Ayez l'avantage d'imprimer en 3D et focalisez vous uniquement sur la création</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
+		<div id="header-joaillerie" class="white"   style="background: url('https://cdn.discordapp.com/attachments/194092101300912129/378585275141455882/Sans_titre-1.png');background-size: cover; background-position: center;min-height: 550px;">
 			<div class="container">
 				<div class="row">
-					<div class="col m4 offset-m2 hide-on-small-only">
-						<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/372818495144198155/bijouterie.png" width="50%">
-					</div>
-					<div class="col m6">
-						<h3>Bijouterie, joaillerie et horlogerie</h3>
-						<p>Dans ce domaine, l'imprimante 3D vous permet de fabriquer à l’unité ou en série vos créations de bagues, colliers, bracelets, montres… avec une grande précision et en un temps record.</p>
-					</div>
-				</div>
-			<div class="row">
-				<div class="col s6">
-					<h3>Pourquoi imprimer en 3D ?</h3>
-					<p>L'impression 3D vous permet non seulement de gagner du temps mais aussi d'avoir un résultat final fiable et de haute précision. Ce qui laisse libre cours à votre imagination permettant ainsi de faire différents modèles personnalisés</p>
-				</div>
-				<div class="col s6 center">
-					<div class="owl-carousel" id="domaine-carousel">
-						<div><img src="http://www.thejewelleryeditor.com/media/images_thumbnails/filer_public_thumbnails/old/49578/EngagementRingStylesCuts002.jpg__760x0_q75_crop-scale_subsampling-2_upscale-false.jpg"></div>
-						<div><img src="http://static.wixstatic.com/media/f5e7f8_9220a7bf7be6402685c732c60aed8a0f.png/v1/fill/w_327,h_308,al_c,usm_0.66_1.00_0.01/f5e7f8_9220a7bf7be6402685c732c60aed8a0f.png"></div>
-						<div><img src="https://i.pinimg.com/564x/b1/48/db/b148db17939f1fec5a44a2ee1d8ae504.jpg"></div>
-						<div><img src="https://i.pinimg.com/564x/0c/3c/83/0c3c830c02132fb3bee9438aee11db68.jpg"></div>
-						<div><img src="https://static.gravotech.com/var/gravotech/storage/images/media/type3/_international/carrousels/produits/3design-rendu-photo-realiste-bague-anneaux/359694-1-int-FR/3design-rendu-photo-realiste-bague-anneaux_product_slide.jpg"></div>
-						<div><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Jewelry-3d-pringint.jpg"></div>
-						<div><img src="https://s-media-cache-ak0.pinimg.com/originals/13/29/a2/1329a2b5344f3e6efc49554fb26bce7b.jpg"></div>
+					<div class="col s6" style="margin-top: 6%;">
+						<h3>Créez des pièces plus précises que jamais</h3>
 					</div>
 				</div>
 			</div>
+		</div>
 
-		</section>
+		<div class="container">
+			<div class="row">
+				<div class="col s6">
+					<img src="https://formlabs.com/media/upload/_thumbs/M_castable-overview4.png.680x383_q80_crop-smart.png">
+				</div>
+				<div class="col s6">
+					<h5>Résine Calcinable</h5>
+					<p>La résine Calcinable est une de nos résines les plus précises. Elle brûle et se consume sans laisser de résidus, permettant aux joailliers de passer directement du design numérique au modèle master. Les pièces imprimées en résine Calcinable sont destinées à être brûlées et à créer des empreintes de moules ou arbres de coulée.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h5>Résine Grise Classique</h5>
+					<p>La résine Grise a un rendu mat et détaillé qui la rend idéale pour se faire une idée rapide du produit fini, à coût dérisoire. Suffisamment robuste pour être manipulée par les clients, elle permet de créer des prototypes convaincants et réalistes.</p>
+				</div>
+				<div class="col s6">
+					<img src="https://formlabs.com/media/upload/_thumbs/mask-ring-overview-attribute2x.jpg.680x383_q80_crop-smart.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="owl-carousel" id="jewels-carousel">
+					<div><img src="{{ URL::to('src/img/jewels/1.jpg') }}"></div>
+					<div><img src="{{ URL::to('src/img/jewels/2.jpg') }}"></div>
+					<div><img src="{{ URL::to('src/img/jewels/3.jpg') }}"></div>
+					<div><img src="{{ URL::to('src/img/jewels/4.jpg') }}"></div>
+				</div>
+			</div>
+		</div>
+
+			
 
 	</div>
 
 	<div id="prototypage">
 		
+		<div id="header-prototypage" class="white"   style="background: url('{{ URL::to('src/img/backgrounds/prototyping.jpg') }}'); background-size: cover; background-position: center;min-height: 550px;">
+			
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col s8 offset-s2 center">
+					<h3>Matériaux techniques pour prototypes et design industriel</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<img src="https://static.formlabs.com/static/formlabs-web-frontend/img/products/resin/engineering/tough/gallery/M_drone.jpg?73898c5-4346535">
+				</div>
+				<div class="col s6">
+					<h5>Haute Résistance</h5>
+					<p>Cette résine a été conçue pour simuler le plastique ABS et présente une résistance à la traction et un module d'élasticité comparables. Cette résine solide, résistante à la rupture et pouvant supporter des déformations ou des contraintes importantes, convient parfaitement au prototypage.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h5>Haute Température</h5>
+					<p>La résine Haute Température présente une température de déflexion à la chaleur de 289 ºC à 0,45 MPa, la plus élevée sur le marché des matériaux pour l'impression 3D. Elle donne de très bons résultats pour des applications statiques à haute température. Elle peut aussi s'utiliser pour des procédés de fabrication par moulage ou thermoformage.</p>
+				</div>
+				<div class="col s6">
+					<img src="https://static.formlabs.com/static/formlabs-web-frontend/img/products/resin/engineering/high-temp/gallery/M_fire.jpg?73898c5-4346535">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<img src="https://static.formlabs.com/static/formlabs-web-frontend/img/products/resin/engineering/flexible/gallery/M_shoe.jpg?73898c5-4346535">
+				</div>
+				<div class="col s6">
+					<h5>Flexible</h5>
+					<p>La résine Flexible simule un caoutchouc de dureté 80A. Ce matériau polyvalent s'utilise pour des pièces qui doivent se plier et se tordre au cours du temps. La résine Flexible convient parfaitement pour simuler des matériaux doux au toucher et pour ajouter des éléments ergonomiques à des ensembles faits de plusieurs matériaux.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h5>Durable</h5>
+					<p>La résine Durable a été conçue pour simuler le polypropylène (PP). Elle reprend sa forme initiale après de fortes pressions. Cette résine ductile et résistante à l'usure s'utilise pour réaliser des pièces qui doivent se déformer et présenter un aspect lisse et brillant.</p>
+				</div>
+				<div class="col s6">
+					<img src="https://static.formlabs.com/static/formlabs-web-frontend/img/products/resin/engineering/durable/gallery/M_durable-bottle.jpg?73898c5-4346535">
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 @endsection
@@ -98,8 +185,8 @@ Bijouterie | MC3
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		 $('#domaine-carousel').owlCarousel({
-		       items:1,
+		 $('#jewels-carousel').owlCarousel({
+		       items:3,
 		       loop:true,
 		       center:true,
 		       margin:10,

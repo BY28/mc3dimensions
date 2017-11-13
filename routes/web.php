@@ -23,12 +23,14 @@ Route::get('formations/3design', function () {
     return view('formation');
 });
 
-Route::get('domaines', function () {
-    return view('domaines');
+Route::get('domaines/dentaire', function () {
+    return view('dentaire');
 });
-
-Route::get('domaines/bijouterie', function () {
-    return view('domaine');
+Route::get('domaines/joaillerie', function () {
+    return view('joaillerie');
+});
+Route::get('domaines/prototypage', function () {
+    return view('prototypage');
 });
 
 Route::get('about', function(){
@@ -60,6 +62,11 @@ Route::get('print', function () {
 Route::get('send', function () {
     return view('send');
 });
+
+Route::get('support', function () {
+    return view('support');
+});
+
 
 Route::get('inprogress', function () {
     return view('inprogress');

@@ -47,7 +47,7 @@ Boutique | MC3
 			    <div class="col l3 m4 s12">
 			      <div class="card hoverable">
 			        <div class="card-image">
-			          <img class="responsive-img" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c17.0.540.540/p180x540/20627393_1295823477209860_6333164414526554112_n.jpg?oh=5b4e7cfcdeefed2eb1f26b451c64b508&oe=5A79F9B5&__gda__=1517118654_e2299ba8d2aacdd190018b8049bbeb6d">
+			          <img class="responsive-img" src="{{ URL::to('src/img/illustrations/product_form2.jpg') }}">
 			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 			        </div>
 			        <div class="card-content">
@@ -60,7 +60,7 @@ Boutique | MC3
 			    <div class="col l3 m4 s12">
 			      <div class="card hoverable">
 			        <div class="card-image">
-			          <img class="responsive-img" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c0.6.552.552/p552x414/20627329_1339637999418113_292918813991632896_n.jpg?oh=198dd1549f7a1ee22d3ae0a0df4fc2f2&oe=5AAF3780&__gda__=1521271689_c3f92d27c16b17594c0322f25ad2b366">
+			          <img class="responsive-img" src="{{ URL::to('src/img/illustrations/product_3design.jpg') }}">
 			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 			        </div>
 			        <div class="card-content">
@@ -73,7 +73,7 @@ Boutique | MC3
 			    <div class="col l3 m4 s12">
 			      <div class="card hoverable">
 			        <div class="card-image">
-			          <img class="responsive-img" src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c41.0.540.540/p180x540/20504881_1499920073400696_320361520414326784_n.jpg?oh=147ee5ae78f250937866e8f1b4a074cb&oe=5A7B6EE8&__gda__=1517717225_b8c1d536443bca3ab7fe8ef5fb59c6f6">
+			          <img class="responsive-img" src="{{ URL::to('src/img/illustrations/product_scanner.jpg') }}">
 			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 			        </div>
 			        <div class="card-content">
@@ -86,7 +86,7 @@ Boutique | MC3
 			    <div class="col l3 m4 s12">
 			      <div class="card hoverable">
 			        <div class="card-image">
-			          <img class="responsive-img" src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c61.0.540.540/p180x540/20627278_1700648413281258_3652275553832009728_n.jpg?oh=3d23a37d224ad1288ef70648108280f6&oe=5AA93E5A&__gda__=1518081617_cedc3d94cb070cbba00afe5ff89569b1">
+			          <img class="responsive-img" src="{{ URL::to('src/img/illustrations/product_cubepro.jpg') }}">
 			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 			        </div>
 			        <div class="card-content">
@@ -99,7 +99,7 @@ Boutique | MC3
 			    <div class="col l3 m4 s12">
 			      <div class="card hoverable">
 			        <div class="card-image">
-			          <img class="responsive-img" src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t45.5328-0/c5.0.540.540/p180x540/20627385_1875012565848728_6178600150840115200_n.jpg?oh=93047ce499a8af6f32df54e76983d566&oe=5A69E463&__gda__=1517328226_6d1e9e8d68429e929f6b02d9057d1ac3">
+			          <img class="responsive-img" src="{{ URL::to('src/img/illustrations/product_pack.jpg') }}">
 			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
 			        </div>
 			        <div class="card-content">
@@ -109,109 +109,7 @@ Boutique | MC3
 			      </div>
 			    </div>
 			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/1">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/2">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/3">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/4">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/5">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/6">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/7">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
-			    
-			    <div class="col l3 m4 s12">
-			      <div class="card hoverable">
-			        <div class="card-image">
-			          <img class="responsive-img" src="http://lorempicsum.com/nemo/400/400/8">
-			          <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add_shopping_cart</i></a>
-			        </div>
-			        <div class="card-content">
-			        	<span class="card-title truncate">Nom Produit</span>
-			          <p>0000 DA</p>
-			        </div>
-			      </div>
-			    </div>
+			   
 			 
 			 </div>
 		</div>

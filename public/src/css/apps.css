@@ -88,6 +88,16 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #f39c12;
 }
 
+.collapsible-header.active{
+    background: #34495e;
+    color: white;
+}
+
+.collapsible-body{
+    background: #34495e;
+    color: white;
+}
+
 .tabs .tab a {
   color: #34495e;
 }
@@ -128,19 +138,41 @@ main {
   background: #ecf0f1;
 }
  
-.navbar-fixed nav{
-	background: #ffffff;
-  position: static;
+.navbar-fixed {
+  top:-32px;
+}
+
+.navbar-fixed {
+  z-index:900;
+}
+
+.navbar-upper {
+  z-index:900;
+  height: 32px;
+  line-height: 32px;
+  color: #34495e;
+}
+
+
+.navbar-upper nav, .navbar-upper nav .nav-wrapper i, .navbar-upper nav a.button-collapse, .navbar-upper nav a.button-collapse i {
+    height: 32px;
+    line-height: 32px;
+}
+
+ 
+.navbar-fixed nav, .navbar-upper nav, .navbar-lower nav{
+  background: #ffffff;
 }
 
 nav ul a{
   color: #34495e;
 }
-
+nav ul li{
+  color: #34495e;
+}
 nav a{
   color: #34495e;
 }
-
 .page-footer{
 	background: #ffffff;
   color: #34495e;

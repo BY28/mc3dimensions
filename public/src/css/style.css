@@ -102,6 +102,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #34495e;
 }
 
+.tabs .tab a {
+  color: #34495e;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: orange;
+}
+
+.tabs .indicator {
+  background-color: orange;
+}
+
 .pagination li.active {
     background-color: orange;
 }
@@ -121,14 +133,38 @@ main {
   flex: 1 0 auto;
 }
  
-.navbar-fixed nav{
+.navbar-fixed {
+  top:-32px;
+}
+
+.navbar-fixed {
+  z-index:900;
+}
+
+.navbar-upper {
+  z-index:900;
+  height: 32px;
+  line-height: 32px;
+  color: #34495e;
+}
+
+
+.navbar-upper nav, .navbar-upper nav .nav-wrapper i, .navbar-upper nav a.button-collapse, .navbar-upper nav a.button-collapse i {
+    height: 32px;
+    line-height: 32px;
+}
+
+ 
+.navbar-fixed nav, .navbar-upper nav, .navbar-lower nav{
 	background: #ffffff;
 }
 
 nav ul a{
   color: #34495e;
 }
-
+nav ul li{
+  color: #34495e;
+}
 nav a{
   color: #34495e;
 }
@@ -156,7 +192,7 @@ nav a{
 
 #header{
     /*background-image: linear-gradient(to top, rgba(22,24,30,0.2), rgba(78, 85, 93, 0.32)),url("https://img4.hostingpics.net/pics/158349hexagonalcubepatternthingiebyblacklightstudiod68vloo.png");*/
-   	background-image: url("https://cdn.discordapp.com/attachments/194092101300912129/376105943424958475/ecosystem_wash-cure-L.jpg");
+   	background-image: url("../img/backgrounds/main_header.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -340,7 +376,7 @@ nav a{
            transition:all 0.5s ease;
 }
 
-.industry-item img:hover{
+.industry-item img:hover, .industry-item a:hover > img{
     -webkit-transform: translate(0,-15px);
     transform: translate(0,-15px);
 }
@@ -399,7 +435,6 @@ nav a{
 
 .formations-caption{
 	list-style: none;
-	margin-left: 10%;
 }
 
 .formations-caption li{
@@ -577,7 +612,7 @@ nav a{
 	min-height: 500px;
 }
 
-#section-contact ul li{
+#section-contact #informations ul li{
 	padding: 4%;
 	font-size: 1.2rem;
 }

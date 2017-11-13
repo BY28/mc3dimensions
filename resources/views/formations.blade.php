@@ -17,7 +17,67 @@ Formations | MC3
 	<section class="section" id="formations">
 		
 		<div class="container">
-			<h2>Nos formations</h2>
+				<h2>Nos formations</h2>
+				 <div class="row">
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-ligh">
+          <img src="{{ URL::to('src/img/illustrations/3design_formation.png') }}" class="activator">
+          <!-- <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a> -->
+        </div>
+        <div class="card-content">
+          <span class="card-title activator truncate">3DESIGN</span>
+          <!-- <p class="truncate">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p> -->
+        </div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">3DESIGN<i class="material-icons right">close</i></span>
+      		<p>Logiciel de conception de bijoux</p>
+    	</div>
+      	<div class="card-action">
+      		<a href="#">Inscription</a>
+      	</div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-ligh">
+          <img src="{{ URL::to('src/img/illustrations/solidworks_formation.png') }}" class="activator">
+          <!-- <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a> -->
+        </div>
+        <div class="card-content">
+          <span class="card-title activator truncate">SOLIDWORKS</span>
+          <!-- <p class="truncate">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p> -->
+        </div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">SOLIDWORKS<i class="material-icons right">close</i></span>
+      		<p>Logiciel de conception CAO</p>
+    	</div>
+      	<div class="card-action">
+      		<a href="#">Inscription</a>
+      	</div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card sticky-action">
+        <div class="card-image waves-effect waves-block waves-ligh">
+          <img src="{{ URL::to('src/img/illustrations/java_formation.png') }}" class="activator">
+          <!-- <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a> -->
+        </div>
+        <div class="card-content">
+          <span class="card-title activator truncate">JAVA</span>
+          <!-- <p class="truncate">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p> -->
+        </div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">JAVA<i class="material-icons right">close</i></span>
+      		<p>Langage de programmation</p>
+    	</div>
+      	<div class="card-action">
+      		<a href="#">Inscription</a>
+      	</div>
+      </div>
+    </div>
+  </div>
+		<!--
 			<div class="row center">		
 				<ul class="formations-caption">
 					<li>
@@ -44,6 +104,7 @@ Formations | MC3
 					</li>
 				</ul>
 			</div>
+		-->
 		</div>
 	
 	</section>

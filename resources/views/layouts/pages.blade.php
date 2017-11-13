@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="{{ URL::to('src/css/style.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.theme.default.min.css') }}">
+		<link rel="stylesheet" href="{{ URL::to('src/font-awesome/css/font-awesome.min.css') }}">
 
 		@yield('styles')
 	</head>
@@ -57,14 +58,15 @@
 				<div class="container">	
 					<div class="owl-carousel" id="partners-carousel">
 						<div><img src="{{ URL::to('src/img/partners/symantec.png') }}"></div>
+						<div><img src="{{ URL::to('src/img/partners/formlabs.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/autodesk.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/gravotech.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/solidworks.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/3dsystems.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/stratasys.png') }}"></div>
-						<div><img src="{{ URL::to('src/img/partners/apc.png') }}"></div>
-						<div><img src="{{ URL::to('src/img/partners/aruba.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/creaform.png') }}"></div>
+						<!--<div><img src="{{ URL::to('src/img/partners/apc.png') }}"></div>
+						<div><img src="{{ URL::to('src/img/partners/aruba.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/digium.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/epson.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/hewlettpackard.png') }}"></div>
@@ -76,7 +78,7 @@
 						<div><img src="{{ URL::to('src/img/partners/qnap.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/smart.png') }}"></div>
 						<div><img src="{{ URL::to('src/img/partners/tplink.png') }}"></div>
-						<div><img src="{{ URL::to('src/img/partners/veritas.png') }}"></div>
+						<div><img src="{{ URL::to('src/img/partners/veritas.png') }}"></div>-->
 					</div>
 				</div>
 			</section>
@@ -95,6 +97,17 @@
 		<script src="{{ URL::to('src/materialize/js/materialize.min.js') }}"></script>
 		<script src="{{ URL::to('src/owlcarousel/js/owl.carousel.min.js') }}"></script>
 		<script type="text/javascript">
+			
+			  // AFFIX LOWER NAVBAR ON SCROLL
+			$(window).scroll(function() {    
+			    var scroll = $(window).scrollTop();
+			    if (scroll >= 32) {
+			        $(".navbar-lower").addClass("navbar-fixed");
+			    }
+			    else {
+			        $(".navbar-lower").removeClass("navbar-fixed");     
+			    }
+			});
 			
 			$(document).ready(function(){
 				$('#partners-carousel').owlCarousel({
@@ -123,8 +136,10 @@
 
 			updateColor();
 		</script>
+		<!--
 		<script type="text/javascript" src="{{ URL::to('src/particles/js/particles.min.js') }}"></script>
 		<script type="text/javascript">particlesJS.load("header-particles", "{{ URL::to('src/particles/json/particles.json') }}", function(){});</script>
+	-->
 		@yield('scripts')
 
 	</body>

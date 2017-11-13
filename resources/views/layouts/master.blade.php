@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="{{ URL::to('src/css/style.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.theme.default.min.css') }}">
+		<link rel="stylesheet" href="{{ URL::to('src/font-awesome/css/font-awesome.min.css') }}">
 
 		@yield('styles')
 	</head>
@@ -31,7 +32,19 @@
 			
 			@yield('sidebar')
 			@yield('content')
-          
+          	
+			<!-- <div class="fixed-action-btn vertical">
+			    <a class="btn-floating btn-large orange">
+			      <i class="large material-icons">share</i>
+			    </a>
+			    <ul>
+			      <li><a class="btn-floating white" style="color: #cd201f"><i style="color: #cd201f" class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+			      <li><a class="btn-floating white" style="color: #d34836"><i style="color: #d34836" class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+			      <li><a class="btn-floating white" style="color: #0077B5"><i style="color: #0077B5" class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			      <li><a class="btn-floating white" style="color: #3b5999"><i style="color: #3b5999" class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			    </ul>
+			  </div> -->
+
 		</main>
 
 		<footer>	
@@ -46,6 +59,18 @@
 		<script type="text/javascript">
 			
 			$(".button-collapse").sideNav();
+
+			  // AFFIX LOWER NAVBAR ON SCROLL
+			$(window).scroll(function() {    
+			    var scroll = $(window).scrollTop();
+			    if (scroll >= 32) {
+			        $(".navbar-lower").addClass("navbar-fixed");
+			    }
+			    else {
+			        $(".navbar-lower").removeClass("navbar-fixed");     
+			    }
+			});
+
         
 			$(document).on('scroll', function (e) { updateColor(); });
 

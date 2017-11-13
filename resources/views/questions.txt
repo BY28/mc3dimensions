@@ -1,0 +1,48 @@
+/*
+	SYSTEME DE CONNEXION
+*/ 
+ 
+	// inscription/connexion : classique												|
+	// devenir memebre : Envoi d'une demande en attente d'être acceptée					|
+	// page de connexion : email - mdp													|
+	// lien menant vers une page de connexion : site.com/login/user-link - email - mdp	|
+
+
+/*
+	INSCRIPION AUX FORMATIONS
+*/
+
+	// via le formulaire contact					|
+	// formulaire dans la page FORMATIONS 			|
+	// reception par mail 							|
+	// reception sur le panneau d'ADMINISTRATION 	|
+
+
+/*
+	COMMANDE D'OBJETS 3D
+*/
+
+	// possible pour les membres (utilisateurs inscrits) uniquement			|
+	// pas inscrit -> renvoi vers la page inscription/devenir membres 						|
+	// reception/téléchargement des objets sur le panneau d'administration 	|<
+
+	/* OPTIONS (options pour le formulaire de commande d'impression 3D) */
+
+		// 
+		// 
+		// 
+
+/*
+	COMMANDE PRODUITS
+*/
+		
+		// formulaire/coordonnées						|
+		// reception sur le panneau d'ADMINISTRATION 	|
+
+
+/*
+	AUTRES
+*/
+
+	// logo MC3
+	// page d'explication? : types d'impression 3D (SLA, FDM...)

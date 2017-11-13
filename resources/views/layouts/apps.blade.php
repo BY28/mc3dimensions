@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="{{ URL::to('src/css/apps.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{ URL::to('src/owlcarousel/css/owl.theme.default.min.css') }}">
+		<link rel="stylesheet" href="{{ URL::to('src/font-awesome/css/font-awesome.min.css') }}">
 
 		@yield('styles')
 	</head>

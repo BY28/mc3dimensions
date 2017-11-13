@@ -23,34 +23,117 @@ Contact | MC3
 
 
 		<div class="container">
+        
 			<div class="row">
 				<div class="col m6 s12 z-depth-1 hoverable" id="contact-form">
-					<h5>Restez en contact</h5>
-					<p>Envoyez-nous votre message, requête ou commentaire.</p>
-					{!! $errors->first('message', ' <div class="card-panel orange lighten-1"><span class="white-text">:message</span></div>') !!}
-					<form action="#" method="post">
-						<div class="input-field">
-						 	<i class="material-icons prefix">email</i>
-				         	<input id="email" type="email" class="validate">
-				         	<label for="email">Email</label>
-				        </div>
-				        <div class="input-field">
-							<i class="material-icons prefix">subject</i>
-				        	<input id="subject" type="text" class="validate">
-				        	<label for="subject">Sujet</label>
-				        </div>
-						<div class="input-field">	
-							<i class="material-icons prefix">mode_edit</i>
-					        <textarea name="message" id="textarea" class="materialize-textarea" style="height: 18rem" data-length="1024"></textarea>
-					        <label for="textarea" class="">Message</label>
+					<div class="row">
+						<div class="col s12">
+							<ul class="tabs">
+						        <li class="tab col s4"><a href="#message">Message</a></li>
+						        <li class="tab col s4"><a href="#formation">Formation</a></li>
+								<li class="tab col s4"><a href="#support">Support</a></li>
+						  	</ul>
 						</div>
-						<div class="input-field">	
-							<button class="waves-effect waves-light btn orange right" type="submit">Envoyer</button>
-						</div>
-						{{csrf_field()}}
-					</form>
+					</div>
+					<div id="message">
+						<h5>Envoyez un message</h5>
+						<p>Envoyez-nous votre message, requête ou commentaire.</p>
+						{!! $errors->first('message', ' <div class="card-panel orange lighten-1"><span class="white-text">:message</span></div>') !!}
+						<form action="#" method="post">
+							<div class="input-field">
+							 	<i class="material-icons prefix">email</i>
+					         	<input id="email" type="email" class="validate">
+					         	<label for="email">Email</label>
+					        </div>
+							<div class="input-field">
+							 	<i class="material-icons prefix">phone</i>
+					         	<input id="phone" type="text" class="validate">
+					         	<label for="phone">Tel</label>
+					        </div>
+					        <div class="input-field">
+								<i class="material-icons prefix">subject</i>
+					        	<input id="subject" type="text" class="validate">
+					        	<label for="subject">Sujet</label>
+					        </div>
+							<div class="input-field">	
+								<i class="material-icons prefix">mode_edit</i>
+						        <textarea name="message" id="textarea" class="materialize-textarea" style="height: 18rem" data-length="1024"></textarea>
+						        <label for="textarea" class="">Message</label>
+							</div>
+							<div class="input-field">	
+								<button class="waves-effect waves-light btn orange right" type="submit"><i class="material-icons">send</i></button>
+							</div>
+							{{csrf_field()}}
+						</form>
+					</div>
+					<div id="formation">
+						<h5>Besoin d'une formation ?</h5>
+						<p>Choisissez une formation et nous vous contacterons le plus rapidement possible.</p>
+						{!! $errors->first('message', ' <div class="card-panel orange lighten-1"><span class="white-text">:message</span></div>') !!}
+						<form action="#" method="post">
+							<div class="input-field">
+							 	<i class="material-icons prefix">email</i>
+					         	<input id="email" type="email" class="validate">
+					         	<label for="email">Email</label>
+					        </div>
+							<div class="input-field">
+							 	<i class="material-icons prefix">phone</i>
+					         	<input id="phone" type="text" class="validate">
+					         	<label for="phone">Tel</label>
+					        </div>
+					        <div class="input-field">
+					        	<i class="material-icons prefix">school</i>
+					        	 <select>
+							     <option value="" disabled selected>Choix de la formation</option>
+							     <option value="1">3DESIGN</option>
+							     <option value="2">SOLIDWORKS</option>
+							     <option value="3">JAVA</option>
+							   </select>
+					        </div>
+							<div class="input-field">	
+								<i class="material-icons prefix">mode_edit</i>
+						        <textarea name="message" id="textarea" class="materialize-textarea" style="height: 18rem" data-length="1024"></textarea>
+						        <label for="textarea" class="">Message</label>
+							</div>
+							<div class="input-field">	
+								<button class="waves-effect waves-light btn orange right" type="submit"><i class="material-icons">send</i></button>
+							</div>
+							{{csrf_field()}}
+						</form>
+					</div>
+					<div id="support">
+						<h5>Vous rencontrez un problème ?</h5>
+						<p>Notre équipe réponds à toutes vos questions.</p>
+						{!! $errors->first('message', ' <div class="card-panel orange lighten-1"><span class="white-text">:message</span></div>') !!}
+						<form action="#" method="post">
+							<div class="input-field">
+							 	<i class="material-icons prefix">email</i>
+					         	<input id="email" type="email" class="validate">
+					         	<label for="email">Email</label>
+					        </div>
+							<div class="input-field">
+							 	<i class="material-icons prefix">phone</i>
+					         	<input id="phone" type="text" class="validate">
+					         	<label for="phone">Tel</label>
+					        </div>
+					        <div class="input-field">
+								<i class="material-icons prefix">error</i>
+					        	<input id="subject" type="text" class="validate">
+					        	<label for="subject">Question</label>
+					        </div>
+							<div class="input-field">	
+								<i class="material-icons prefix">mode_edit</i>
+						        <textarea name="message" id="textarea" class="materialize-textarea" style="height: 18rem" data-length="1024"></textarea>
+						        <label for="textarea" class="">Description</label>
+							</div>
+							<div class="input-field">	
+								<button class="waves-effect waves-light btn orange right" type="submit"><i class="material-icons">send</i></button>
+							</div>
+							{{csrf_field()}}
+						</form>
+					</div>
 				</div>
-				<div class="col m6 s12">
+				<div class="col m6 s12" id="informations">
 						<h3>Informations</h3>
 						<div class="divider"></div>
 						<ul>
@@ -58,7 +141,7 @@ Contact | MC3
 							<li><i class="material-icons prefix">phone</i> 021 44 53 73</li>
 							<li><i class="material-icons prefix">location_on</i> N°5 Lotissement Gigot - Les Vergers. BP70 BIS 16105. Birkhadem Cedex. Alger.</li>
 						</ul>
-						<img class="responsive-img" src="https://cdn.discordapp.com/attachments/194092101300912129/373480477702619136/contacy.png">
+						<img class="responsive-img" src="{{ URL::to('src/img/illustrations/contact.png') }}">
 					</div>
 			</div>
 		</div>
@@ -83,6 +166,11 @@ Contact | MC3
 	          position: myLatLng
 	        });
     	}
+
+    	$(document).ready(function() {
+	    	$('select').material_select();
+	  	});
+            
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJxWQIPOiN1AIGCG4-mp308Mv0hXQYcm0&callback=initMap"></script>
 @endsection

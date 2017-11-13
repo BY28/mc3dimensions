@@ -6,7 +6,7 @@
         <p >MC3 Algérie assure vos arrières, nous vous accompagnons tout au long des différents processus. Nous sommes à votre disposition.</p>
       </div>
       <div class="col l6 s12">
-          <div class="col m3 s12 right">
+          <div class="col m4 s12 right">
             <h5>Services</h5>
             <ul>
               <li><a  href="{{ URL::to('formations') }}">Formations</a></li>
@@ -15,7 +15,7 @@
               <li><a  href="{{ URL::to('domaines') }}">Domaines</a></li>
             </ul>
           </div>
-          <div class="col m3 s12 right">
+          <div class="col m4 s12 right">
             <h5 >Entreprise</h5>
             <ul>
               <li><a  href="{{ URL::to('about') }}">A propos de nous</a></li>
@@ -23,7 +23,7 @@
               <li><a  href="{{ URL::to('blog') }}">Blog</a></li>
             </ul>
           </div>
-          <div class="col m3 s12 right">
+          <div class="col m4 s12 right">
             <h5 >Suivez-nous</h5>
             <ul>
               <li><a  href="#">Facebook</a></li>
